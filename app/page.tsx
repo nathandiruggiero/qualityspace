@@ -587,18 +587,18 @@ export default function Home() {
                 image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=300&auto=format&fit=crop",
               },
               {
-                title: "Réseautage",
-                description: "Connectez-vous avec d'autres entrepreneurs, créatifs et sponsors",
+                title: "Beauté",
+                description: "Découvrez des produits de beauté locaux et des soins naturels adaptés à votre peau",
                 icon: (
                   <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600">
-                    <div className="text-xl">🤝</div>
+                    <div className="text-xl">💄</div>
                   </div>
                 ),
                 image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=300&auto=format&fit=crop",
               },
               {
                 title: "Cadeaux",
-                description: "Repartez avec des goodies exclusifs et participez à nos tirages au sort",
+                description: "Repartez avec des goodies exclusifs et des surprises tout au long de l'événement",
                 icon: (
                   <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600">
                     <Gift className="w-6 h-6" />
@@ -632,6 +632,104 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Programme Section */}
+      <section className="py-24 bg-rose-50 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
+        <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-bl from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-gradient-to-tr from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <motion.div variants={fadeIn}>
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
+                24 Mai 2025
+              </Badge>
+            </motion.div>
+            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
+                Programme de l'Événement
+              </span>
+            </motion.h2>
+            <motion.p variants={fadeIn} className="text-lg text-rose-800">
+              Une journée complète d'activités, d'ateliers et de découvertes
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="relative pl-8 py-8 pr-4">
+              <div className="absolute top-0 bottom-0 left-16 w-0.5 bg-gradient-to-b from-rose-300 via-rose-500 to-rose-300"></div>
+
+              {[
+                {
+                  time: "09:00",
+                  title: "Ouverture des Portes",
+                  description: "Accueil des visiteurs et présentation de l'événement",
+                },
+                {
+                  time: "10:00",
+                  title: "Atelier Création de Bijoux",
+                  description: "Apprenez à créer vos propres bijoux avec des matériaux locaux",
+                },
+                {
+                  time: "11:30",
+                  title: "Conférence sur l'Entrepreneuriat Féminin",
+                  description: "Témoignages inspirants de femmes entrepreneures guadeloupéennes",
+                },
+                {
+                  time: "13:00",
+                  title: "Pause Déjeuner & Networking",
+                  description: "Profitez des stands de restauration et rencontrez d'autres participants",
+                },
+                {
+                  time: "14:30",
+                  title: "Défilé de Mode",
+                  description: "Découvrez les créations des designers locaux",
+                },
+                {
+                  time: "16:00",
+                  title: "Atelier Bien-être",
+                  description: "Initiation aux techniques de relaxation et soins naturels",
+                },
+                {
+                  time: "18:00",
+                  title: "Showcase Musical",
+                  description: "Performance live d'artistes locaux",
+                },
+                {
+                  time: "20:00",
+                  title: "Cocktail de Clôture",
+                  description: "Célébration et remise de prix aux exposants",
+                },
+              ].map((item, index) => (
+                <motion.div key={index} variants={fadeIn} className="relative mb-12 last:mb-0 flex">
+                  <div className="absolute -left-8 mt-1">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center text-white shadow-lg">
+                      <span className="text-sm font-bold">{item.time}</span>
+                    </div>
+                  </div>
+                  <div className="ml-12 bg-gradient-to-r from-white to-rose-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 w-full">
+                    <h3 className="font-bold text-rose-800 text-xl">{item.title}</h3>
+                    <p className="text-rose-700 mt-2">{item.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>

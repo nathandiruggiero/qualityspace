@@ -9,6 +9,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { useMobile } from "@/hooks/use-mobile"
 import { useState, useEffect } from "react"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 export default function ExposantsPage() {
   const fadeIn = {
@@ -316,6 +318,126 @@ export default function ExposantsPage() {
                   <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
               </Link>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-16 md:py-24 bg-rose-50 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
+        <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-bl from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-gradient-to-tr from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-4xl mx-auto"
+          >
+            <motion.div variants={fadeIn} className="text-center mb-12">
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
+                Formulaire Exposant
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-6">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
+                  Demande d'Information
+                </span>
+              </h2>
+              <p className="text-lg text-rose-800 max-w-2xl mx-auto">
+                Vous souhaitez exposer lors de notre prochaine édition ? Remplissez ce formulaire et nous vous
+                contacterons rapidement.
+              </p>
+            </motion.div>
+
+            <motion.div variants={scaleUp}>
+              <Card className="border-none shadow-xl overflow-hidden bg-white/90 backdrop-blur-sm">
+                <CardContent className="p-6">
+                  <form className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="name" className="text-sm font-medium text-rose-800">
+                          Nom
+                        </label>
+                        <Input
+                          id="name"
+                          placeholder="Votre nom"
+                          className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="email" className="text-sm font-medium text-rose-800">
+                          Email
+                        </label>
+                        <Input
+                          id="email"
+                          type="email"
+                          placeholder="Votre email"
+                          className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label htmlFor="phone" className="text-sm font-medium text-rose-800">
+                          Téléphone
+                        </label>
+                        <Input
+                          id="phone"
+                          placeholder="Votre numéro de téléphone"
+                          className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="company" className="text-sm font-medium text-rose-800">
+                          Entreprise / Marque
+                        </label>
+                        <Input
+                          id="company"
+                          placeholder="Nom de votre entreprise ou marque"
+                          className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
+                        />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="activity" className="text-sm font-medium text-rose-800">
+                        Type d'activité
+                      </label>
+                      <select
+                        id="activity"
+                        className="w-full rounded-md border-rose-200 focus:border-rose-500 focus:ring-rose-500"
+                      >
+                        <option value="">Sélectionnez votre domaine d'activité</option>
+                        <option value="mode">Mode & Accessoires</option>
+                        <option value="beaute">Beauté & Cosmétiques</option>
+                        <option value="bien-etre">Bien-être & Santé</option>
+                        <option value="food">Food & Boissons</option>
+                        <option value="art">Art & Artisanat</option>
+                        <option value="autre">Autre</option>
+                      </select>
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="message" className="text-sm font-medium text-rose-800">
+                        Votre projet
+                      </label>
+                      <Textarea
+                        id="message"
+                        placeholder="Décrivez brièvement votre activité et ce que vous souhaitez présenter lors de l'événement"
+                        rows={6}
+                        className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
+                      />
+                    </div>
+                    <Button
+                      type="submit"
+                      className="w-full bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700"
+                    >
+                      Envoyer ma demande
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
             </motion.div>
           </motion.div>
         </div>

@@ -65,54 +65,45 @@ export default function EquipePage() {
       role: "Fondatrice & Directrice",
       bio: "Entrepreneuse dans l'âme, Laure a plus de 10 ans d'expérience dans l'événementiel et le marketing. Passionnée par l'entrepreneuriat féminin, elle a créé Quality Space WI pour mettre en valeur les talents guadeloupéens et créer un espace d'innovation et de partage.",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300&auto=format&fit=crop",
-      email: "laure@qualityspacewi.com",
+      email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 01",
-      instagram: "@lauremeril",
+      instagram: "@qualityspace.w.i",
     },
     {
       name: "Leïla Meril",
       role: "Directrice Artistique",
       bio: "Designer et artiste, Leïla apporte sa vision créative à Quality Space WI. Avec son expertise dans les arts visuels et son œil pour l'esthétique, elle crée une expérience immersive et inspirante pour tous les participants et visiteurs de l'événement.",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=300&auto=format&fit=crop",
-      email: "leila@qualityspacewi.com",
+      email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 02",
-      instagram: "@leilameril",
+      instagram: "@qualityspace.w.i",
     },
     {
       name: "Sophie Lambert",
       role: "Responsable Communication",
       bio: "Experte en communication digitale, Sophie gère la présence en ligne de Quality Space WI et développe des stratégies pour accroître la visibilité de l'événement. Sa créativité et son sens de l'innovation permettent de toucher un public toujours plus large.",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300&auto=format&fit=crop",
-      email: "sophie@qualityspacewi.com",
+      email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 03",
-      instagram: "@sophielambert",
-    },
-    {
-      name: "Marc Dubois",
-      role: "Responsable Logistique",
-      bio: "Avec son expérience dans l'organisation d'événements, Marc veille au bon déroulement de chaque édition de Quality Space WI. De la gestion des espaces à la coordination des prestataires, il s'assure que tout se passe parfaitement.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300&auto=format&fit=crop",
-      email: "marc@qualityspacewi.com",
-      phone: "+590 690 00 00 04",
-      instagram: "@marcdubois",
+      instagram: "@qualityspace.w.i",
     },
     {
       name: "Nadia Pierre",
       role: "Coordinatrice des Exposants",
       bio: "Nadia est le point de contact privilégié des exposants. Elle les accompagne dans leur préparation et veille à ce que chacun puisse présenter ses créations dans les meilleures conditions. Son sens de l'écoute et sa bienveillance sont très appréciés.",
       image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=300&auto=format&fit=crop",
-      email: "nadia@qualityspacewi.com",
+      email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 05",
-      instagram: "@nadiapierre",
+      instagram: "@qualityspace.w.i",
     },
     {
       name: "Thomas Legrand",
       role: "Responsable Partenariats",
       bio: "Thomas développe les relations avec les sponsors et partenaires de Quality Space WI. Grâce à son réseau et à sa connaissance du tissu économique local, il contribue à renforcer l'impact et la portée de l'événement.",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=300&auto=format&fit=crop",
-      email: "thomas@qualityspacewi.com",
+      email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 06",
-      instagram: "@thomaslegrand",
+      instagram: "@qualityspace.w.i",
     },
   ]
 
@@ -335,10 +326,10 @@ export default function EquipePage() {
                     <div>
                       <h3 className="font-bold text-rose-800 text-lg">Email</h3>
                       <a
-                        href="mailto:contact@qualityspacewi.com"
+                        href="mailto:qualityspacewi@gmail.com"
                         className="text-rose-600 hover:text-rose-800 transition-colors"
                       >
-                        contact@qualityspacewi.com
+                        qualityspacewi@gmail.com
                       </a>
                     </div>
                   </div>
@@ -362,12 +353,42 @@ export default function EquipePage() {
                     <div>
                       <h3 className="font-bold text-rose-800 text-lg">Instagram</h3>
                       <a
-                        href="https://instagram.com/qualityspacewi"
+                        href="https://instagram.com/qualityspace.w.i"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-rose-600 hover:text-rose-800 transition-colors"
                       >
-                        @qualityspacewi
+                        @qualityspace.w.i
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-brand-tiktok"
+                      >
+                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-rose-800 text-lg">TikTok</h3>
+                      <a
+                        href="https://tiktok.com/@quality.space.w.i7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-rose-600 hover:text-rose-800 transition-colors"
+                      >
+                        @quality.space.w.i7
                       </a>
                     </div>
                   </div>
