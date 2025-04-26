@@ -209,24 +209,17 @@ export default function AboutPage() {
 
               {[
                 {
-                  year: "2022",
+                  year: "Début 2024",
                   title: "La Naissance d'une Idée",
                   description:
                     "Laure et Leïla Meril, deux sœurs entrepreneuses, imaginent un événement qui mettrait en valeur les talents guadeloupéens.",
                   icon: "💡",
                 },
                 {
-                  year: "2023",
-                  title: "Premiers Pas",
-                  description:
-                    "Création de l'association Quality Space WI et premières rencontres avec des entrepreneurs locaux pour présenter le concept.",
-                  icon: "🚀",
-                },
-                {
                   year: "2024",
                   title: "Première Édition",
                   description:
-                    "Lancement de la première édition de Quality Space WI qui a rassemblé plus de 30 exposants et 300 visiteurs à l'Hôtel Arawak.",
+                    "Lancement de la première édition de Quality Space WI qui a rassemblé plus de 30 exposants et 500 visiteurs à l'Hôtel Arawak.",
                   icon: "🎉",
                 },
                 {
