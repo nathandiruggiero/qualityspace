@@ -70,7 +70,7 @@ export default function EquipePage() {
       name: "Leïla Meril",
       role: "Directrice Artistique",
       bio: "Designer et artiste, Leïla apporte sa vision créative à Quality Space WI. Avec son expertise dans les arts visuels et son œil pour l'esthétique, elle crée une expérience immersive et inspirante pour tous les participants et visiteurs de l'événement.",
-      image: "/images/team/leila_meril.jpeg",
+      image: "/images/team/leila_meril.jpg",
     },
     {
       name: "Caren PAMPHILE",
