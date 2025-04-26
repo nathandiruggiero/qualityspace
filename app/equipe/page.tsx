@@ -2,16 +2,15 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { motion } from "framer-motion"
-import { Sparkles } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useMobile } from "@/hooks/use-mobile"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
 
 export default function EquipePage() {
   const fadeIn = {
@@ -95,70 +94,7 @@ export default function EquipePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white overflow-hidden">
       {/* Header */}
-      <header
-        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-          isScrolled ? "bg-white/90 backdrop-blur-md shadow-md py-2" : "bg-transparent py-4"
-        }`}
-      >
-        <div className="container mx-auto px-4 flex items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <div className="relative h-12 w-12 mr-3">
-                <Image src="/images/logo.jpeg" alt="Quality Space WI" fill className="rounded-full object-cover" />
-              </div>
-              <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
-                Quality Space WI
-              </span>
-            </Link>
-          </div>
-
-          {!isMobile && (
-            <nav className="hidden md:flex space-x-8">
-              {["À propos", "Le concept", "Infos pratiques", "Exposants", "Sponsors", "Galerie", "L'équipe"].map(
-                (item, index) => (
-                  <Link
-                    key={index}
-                    href={
-                      item === "À propos"
-                        ? "/a-propos"
-                        : item === "Le concept"
-                          ? "/a-propos"
-                          : item === "Infos pratiques"
-                            ? "/infos-pratiques"
-                            : item === "Exposants"
-                              ? "/exposants"
-                              : item === "Sponsors"
-                                ? "/sponsors"
-                                : item === "Galerie"
-                                  ? "/galerie"
-                                  : item === "L'équipe"
-                                    ? "/equipe"
-                                    : "/"
-                    }
-                    className="relative text-rose-900 hover:text-rose-600 transition-colors group"
-                  >
-                    {item}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-500 transition-all duration-300 group-hover:w-full"></span>
-                  </Link>
-                ),
-              )}
-            </nav>
-          )}
-
-          <Link
-            href="https://example.com/tickets"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative inline-flex items-center justify-center h-10 px-6 bg-gradient-to-r from-rose-500 to-rose-600 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group"
-          >
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-rose-600 to-rose-700 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
-            <span className="relative flex items-center">
-              Réserver
-              <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
-            </span>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
@@ -485,61 +421,7 @@ export default function EquipePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-white border-t border-rose-100">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
-              <Link href="/" className="flex items-center">
-                <div className="relative h-12 w-12 mr-3">
-                  <Image src="/images/logo.jpeg" alt="Quality Space WI" fill className="rounded-full object-cover" />
-                </div>
-                <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
-                  Quality Space WI
-                </span>
-              </Link>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-6">
-              <Link href="/" className="text-rose-800 hover:text-rose-600 transition-colors">
-                Accueil
-              </Link>
-              <Link href="/a-propos" className="text-rose-800 hover:text-rose-600 transition-colors">
-                À Propos
-              </Link>
-              <Link href="/a-propos" className="text-rose-800 hover:text-rose-600 transition-colors">
-                Le Concept
-              </Link>
-              <Link href="/infos-pratiques" className="text-rose-800 hover:text-rose-600 transition-colors">
-                Infos Pratiques
-              </Link>
-              <Link href="/exposants" className="text-rose-800 hover:text-rose-600 transition-colors">
-                Exposants
-              </Link>
-              <Link href="/sponsors" className="text-rose-800 hover:text-rose-600 transition-colors">
-                Sponsors
-              </Link>
-              <Link href="/equipe" className="text-rose-800 hover:text-rose-600 transition-colors">
-                Contact
-              </Link>
-            </div>
-
-            <div>
-              <Button
-                asChild
-                className="bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700"
-              >
-                <Link href="https://example.com/tickets">Réserver</Link>
-              </Button>
-            </div>
-          </div>
-
-          <Separator className="my-8 bg-rose-100" />
-
-          <div className="text-center text-rose-700 text-sm">
-            &copy; {new Date().getFullYear()} Quality Space WI. Tous droits réservés.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
