@@ -146,6 +146,63 @@ export default function SponsorsPage() {
         </div>
       </section>
 
+
+      {/* Partners Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-rose-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-fixed opacity-5"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(254,205,211,0.5)_0%,rgba(255,255,255,0)_70%)]"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-4xl mx-auto"
+          >
+            <motion.div variants={fadeIn} className="text-center mb-16">
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
+                Ils nous font confiance
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-6">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
+                  Nos partenaires
+                </span>
+              </h2>
+              <p className="text-lg text-rose-800 mb-8">
+                Découvrez les marques qui nous accompagnent dans cette aventure
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="bg-white p-8 rounded-2xl shadow-xl">
+              <h3 className="text-xl font-bold text-rose-800 mb-6 text-center">Partenaires officiels</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+                {sponsors.map((sponsor) => (
+                  <motion.div
+                    key={sponsor.id}
+                    className="w-full h-32 flex items-center justify-center p-4 hover:scale-105 transition-transform duration-300"
+                    whileHover={{ y: -5 }}
+                  >
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={sponsor.logo || "/placeholder.svg"}
+                        alt={sponsor.alt}
+                        fill
+                        style={{ objectFit: "contain" }}
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+              <p className="text-rose-600 text-center mt-8 font-medium">
+                Merci à tous nos partenaires pour leur soutien précieux
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Why Sponsor Section */}
       <section className="py-16 md:py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-gradient-to-bl from-rose-100 to-transparent opacity-70 rounded-bl-full"></div>
@@ -229,61 +286,6 @@ export default function SponsorsPage() {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-rose-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-fixed opacity-5"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(254,205,211,0.5)_0%,rgba(255,255,255,0)_70%)]"></div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-16">
-              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
-                Ils nous font confiance
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
-                  Nos partenaires
-                </span>
-              </h2>
-              <p className="text-lg text-rose-800 mb-8">
-                Découvrez les marques qui nous accompagnent dans cette aventure
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeIn} className="bg-white p-8 rounded-2xl shadow-xl">
-              <h3 className="text-xl font-bold text-rose-800 mb-6 text-center">Partenaires officiels</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
-                {sponsors.map((sponsor) => (
-                  <motion.div
-                    key={sponsor.id}
-                    className="w-full h-32 flex items-center justify-center p-4 hover:scale-105 transition-transform duration-300"
-                    whileHover={{ y: -5 }}
-                  >
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={sponsor.logo || "/placeholder.svg"}
-                        alt={sponsor.alt}
-                        fill
-                        style={{ objectFit: "contain" }}
-                        className="rounded-lg"
-                      />
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-              <p className="text-rose-600 text-center mt-8 font-medium">
-                Merci à tous nos partenaires pour leur soutien précieux
-              </p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-rose-50 relative overflow-hidden">
