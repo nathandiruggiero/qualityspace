@@ -352,7 +352,7 @@ export default function EquipePage() {
               <motion.div variants={scaleUp}>
                 <Card className="border-none shadow-xl overflow-hidden bg-white/90 backdrop-blur-sm">
                   <CardContent className="p-6">
-                    <form action="https://formspree.io/f/your-form-id" method="POST" className="space-y-6">
+                    <form action="https://formspree.io/f/mqaqalyp" method="POST" className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-2">
                           <label htmlFor="name" className="text-sm font-medium text-rose-800">
