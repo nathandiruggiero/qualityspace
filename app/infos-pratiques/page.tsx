@@ -148,7 +148,7 @@ export default function InfosPratiquesPage() {
                     </div>
                     <div className="w-full md:w-1/2 h-64 md:h-80 relative rounded-xl overflow-hidden">
                       <Image
-                        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop"
+                        src="/images/arawak_hotel.jpg"
                         alt="Hôtel Arawak"
                         fill
                         className="object-cover"
