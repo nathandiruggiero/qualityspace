@@ -11,7 +11,7 @@ import { useMobile } from "@/hooks/use-mobile"
 import { useState, useEffect } from "react"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { submitContactForm } from "@/lib/actions"
+import { submitContactForm } from "@/app/actions/contact"
 
 export default function ExposantsPage() {
   const fadeIn = {
