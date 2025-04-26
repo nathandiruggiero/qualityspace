@@ -113,23 +113,28 @@ export default function Header() {
       {/* Mobile Menu Dropdown */}
       {isMobile && (
         <div
-          className={`fixed inset-0 bg-white z-40 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed inset-0 bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
-          style={{ top: "60px" }}
+          style={{
+            top: "60px",
+            backgroundColor: "white", // Force white background
+          }}
         >
-          <nav className="flex flex-col p-6 space-y-6">
-            {navItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.path}
-                className="text-xl font-medium text-rose-900 hover:text-rose-600 transition-colors border-b border-gray-100 pb-2"
-                onClick={closeMenu}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
+          <div className="bg-white h-full w-full">
+            <nav className="flex flex-col p-6 space-y-6">
+              {navItems.map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.path}
+                  className="text-xl font-medium text-rose-900 hover:text-rose-600 transition-colors border-b border-gray-100 pb-2"
+                  onClick={closeMenu}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
         </div>
       )}
     </header>
