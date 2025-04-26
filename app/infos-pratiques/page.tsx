@@ -279,112 +279,6 @@ export default function InfosPratiquesPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-rose-50 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
-        <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-bl from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-gradient-to-tr from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <motion.div variants={fadeIn}>
-              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
-                Questions fréquentes
-              </Badge>
-            </motion.div>
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">FAQ</span>
-            </motion.h2>
-            <motion.p variants={fadeIn} className="text-lg text-rose-800">
-              Tout ce que vous devez savoir avant de venir
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className="max-w-3xl mx-auto"
-          >
-            <Card className="border-none shadow-xl">
-              <CardContent className="p-6">
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Baby className="w-5 h-5 mr-2 text-rose-600" />
-                        Les enfants sont-ils bienvenus ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Oui, l'événement est ouvert à toute la famille. Des activités spéciales sont prévues pour les
-                      enfants.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-2">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <DogOff className="w-5 h-5 mr-2 text-rose-600" />
-                        Les animaux sont-ils autorisés ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Non, les animaux ne sont pas autorisés dans l'enceinte de l'événement, à l'exception des chiens
-                      guides pour les personnes malvoyantes.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-3">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Coffee className="w-5 h-5 mr-2 text-rose-600" />Y a-t-il de la restauration sur place ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Oui, plusieurs stands de restauration seront présents sur place, proposant une variété de plats
-                      locaux et internationaux.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-4">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Clock className="w-5 h-5 mr-2 text-rose-600" />
-                        Quels sont les horaires de l'événement ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      L'événement se déroule de 09h00 à 22h00. Les portes ouvrent à 08h30.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-5">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Ticket className="w-5 h-5 mr-2 text-rose-600" />
-                        Puis-je acheter mon billet sur place ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Oui, des billets seront disponibles à l'entrée, mais nous recommandons l'achat en ligne pour
-                      éviter les files d'attente et bénéficier de tarifs préférentiels.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Programme Section */}
       <section className="py-16 md:py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-rose-50 to-transparent"></div>
@@ -493,6 +387,112 @@ export default function InfosPratiquesPage() {
                     </motion.div>
                   ))}
                 </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-rose-50 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
+        <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-bl from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-gradient-to-tr from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <motion.div variants={fadeIn}>
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
+                Questions fréquentes
+              </Badge>
+            </motion.div>
+            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">FAQ</span>
+            </motion.h2>
+            <motion.p variants={fadeIn} className="text-lg text-rose-800">
+              Tout ce que vous devez savoir avant de venir
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            className="max-w-3xl mx-auto"
+          >
+            <Card className="border-none shadow-xl">
+              <CardContent className="p-6">
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
+                      <div className="flex items-center">
+                        <Baby className="w-5 h-5 mr-2 text-rose-600" />
+                        Les enfants sont-ils bienvenus ?
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-rose-700">
+                      Oui, l'événement est ouvert à toute la famille. Des activités spéciales sont prévues pour les
+                      enfants.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
+                      <div className="flex items-center">
+                        <DogOff className="w-5 h-5 mr-2 text-rose-600" />
+                        Les animaux sont-ils autorisés ?
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-rose-700">
+                      Non, les animaux ne sont pas autorisés dans l'enceinte de l'événement, à l'exception des chiens
+                      guides pour les personnes malvoyantes.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
+                      <div className="flex items-center">
+                        <Coffee className="w-5 h-5 mr-2 text-rose-600" />Y a-t-il de la restauration sur place ?
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-rose-700">
+                      Oui, plusieurs stands de restauration seront présents sur place, proposant une variété de plats
+                      locaux et internationaux.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
+                      <div className="flex items-center">
+                        <Clock className="w-5 h-5 mr-2 text-rose-600" />
+                        Quels sont les horaires de l'événement ?
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-rose-700">
+                      L'événement se déroule de 09h00 à 22h00. Les portes ouvrent à 08h30.
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
+                      <div className="flex items-center">
+                        <Ticket className="w-5 h-5 mr-2 text-rose-600" />
+                        Puis-je acheter mon billet sur place ?
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-rose-700">
+                      Oui, des billets seront disponibles à l'entrée, mais nous recommandons l'achat en ligne pour
+                      éviter les files d'attente et bénéficier de tarifs préférentiels.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </CardContent>
             </Card>
           </motion.div>
