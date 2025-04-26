@@ -61,32 +61,32 @@ export default function EquipePage() {
   const teamMembers = [
     {
       name: "Laure Meril",
-      role: "Fondatrice & Directrice",
-      bio: "Entrepreneuse dans l'âme, Laure a plus de 10 ans d'expérience dans l'événementiel et le marketing. Passionnée par l'entrepreneuriat féminin, elle a créé Quality Space WI pour mettre en valeur les talents guadeloupéens et créer un espace d'innovation et de partage.",
+      role: "Fondatrice & Présidente",
+      bio: "",
       image: "/images/team/laure_meril.jpg",
     },
     {
       name: "Leïla Meril",
-      role: "Directrice Artistique",
-      bio: "Designer et artiste, Leïla apporte sa vision créative à Quality Space WI. Avec son expertise dans les arts visuels et son œil pour l'esthétique, elle crée une expérience immersive et inspirante pour tous les participants et visiteurs de l'événement.",
+      role: "Responsable Communication et Médias",
+      bio: "",
       image: "/images/team/leila_meril.jpg",
     },
     {
       name: "Caren PAMPHILE",
-      role: "Responsable Communication",
-      bio: "Experte en communication digitale, Caren gère la présence en ligne de Quality Space WI et développe des stratégies pour accroître la visibilité de l'événement. Sa créativité et son sens de l'innovation permettent de toucher un public toujours plus large.",
+      role: "Assitante de Direction",
+      bio: "",
       image: "/images/team/caren_pamphile.jpeg",
     },
     {
       name: "Judicaella GEORGES",
-      role: "Coordinatrice des Exposants",
-      bio: "Judicaella est le point de contact privilégié des exposants. Elle les accompagne dans leur préparation et veille à ce que chacun puisse présenter ses créations dans les meilleures conditions. Son sens de l'écoute et sa bienveillance sont très appréciés.",
+      role: "Assitante Administrative",
+      bio: "",
       image: "/images/team/judicaella_georges.jpeg",
     },
     {
       name: "Natty ANDYPAIN",
-      role: "Responsable Technique",
-      bio: "Natty supervise tous les aspects techniques de nos événements. Grâce à son expertise et son attention aux détails, il assure que chaque installation soit parfaite et que l'expérience soit optimale pour les exposants comme pour les visiteurs.",
+      role: "Responsable Réseau et Support Opérationnel",
+      bio: "",
       image: "/images/team/natty_andypain.jpeg",
     },
   ]

@@ -43,7 +43,7 @@ export default function Header() {
 
         {!isMobile && (
           <nav className="hidden md:flex space-x-8">
-            {["À propos", "Le concept", "Infos pratiques", "Exposants", "Sponsors", "Galerie", "L'équipe"].map(
+            {["À propos", "Le concept", "Infos pratiques", "Exposants", "Sponsors", "L'équipe"].map(
               (item, index) => (
                 <Link
                   key={index}
@@ -58,11 +58,9 @@ export default function Header() {
                             ? "/exposants"
                             : item === "Sponsors"
                               ? "/sponsors"
-                              : item === "Galerie"
-                                ? "/galerie"
-                                : item === "L'équipe"
-                                  ? "/equipe"
-                                  : "/"
+                              : item === "L'équipe"
+                                ? "/equipe"
+                                : "/"
                   }
                   className="relative text-rose-900 hover:text-rose-600 transition-colors group"
                 >
