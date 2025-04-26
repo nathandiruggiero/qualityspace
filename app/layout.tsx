@@ -9,7 +9,13 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Quality Space WI",
   description: "L'événement lifestyle, bien-être et entrepreneuriat local en Guadeloupe",
-    generator: 'v0.dev'
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/favicon/favicon.ico", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/images/favicon/apple-touch-icon.png" }],
+  },
 }
 
 export default function RootLayout({
