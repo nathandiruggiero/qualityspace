@@ -64,7 +64,7 @@ export default function EquipePage() {
       name: "Laure Meril",
       role: "Fondatrice & Directrice",
       bio: "Entrepreneuse dans l'âme, Laure a plus de 10 ans d'expérience dans l'événementiel et le marketing. Passionnée par l'entrepreneuriat féminin, elle a créé Quality Space WI pour mettre en valeur les talents guadeloupéens et créer un espace d'innovation et de partage.",
-      image: "/images/team/laure_meril.jpeg",
+      image: "/images/team/laure_meril.jpg",
     },
     {
       name: "Leïla Meril",
