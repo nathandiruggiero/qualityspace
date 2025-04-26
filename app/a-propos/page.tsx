@@ -152,7 +152,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-br from-rose-300 to-rose-500 rounded-2xl transform rotate-3 scale-95 opacity-20 blur-md"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
+                  src="/images/team/laure_meril.jpg"
                   alt="Fondatrices de Quality Space WI"
                   width={600}
                   height={600}
