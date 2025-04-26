@@ -236,7 +236,7 @@ export default function EquipePage() {
                     </div>
                   </div>
 
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@ export default function EquipePage() {
                         +590 690 00 00 00
                       </a>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-center">
                     <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
