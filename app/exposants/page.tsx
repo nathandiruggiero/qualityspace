@@ -289,26 +289,7 @@ export default function ExposantsPage() {
             <motion.div variants={scaleUp}>
               <Card className="border-none shadow-xl overflow-hidden bg-white/90 backdrop-blur-sm">
                 <CardContent className="p-6">
-                  <form
-                    action={async (formData) => {
-                      const result = await submitContactForm({
-                        name: formData.get("name") as string,
-                        email: formData.get("email") as string,
-                        subject: formData.get("activity") as string,
-                        message: formData.get("message") as string,
-                        formType: "exposant",
-                      })
-
-                      // Afficher un message de confirmation
-                      if (result.success) {
-                        // Vous pouvez utiliser une notification toast ici
-                        alert(result.message)
-                      } else {
-                        alert(result.message)
-                      }
-                    }}
-                    className="space-y-6"
-                  >
+                  <form action="https://formspree.io/f/meogozrl" method="POST" className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium text-rose-800">
