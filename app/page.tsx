@@ -442,8 +442,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Programme Section */}
-      <section className="py-24 bg-rose-50 relative overflow-hidden">
+{/* Programme Section */}
+<section className="py-24 bg-rose-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
         <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-bl from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-gradient-to-tr from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
@@ -539,6 +539,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
       {/* Programme Section */}
       <section className="py-24 bg-rose-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
