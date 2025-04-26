@@ -59,10 +59,10 @@ export default function Header() {
 
   const navItems = [
     { name: "Le concept", path: "/le-concept" },
-    { name: "Infos pratiques", path: "/infos-pratiques" },
     { name: "Exposants", path: "/exposants" },
     { name: "Sponsors", path: "/sponsors" },
     { name: "L'équipe", path: "/equipe" },
+    { name: "Infos pratiques", path: "/infos-pratiques" },
     { name: "À propos", path: "/a-propos" },
   ]
 
