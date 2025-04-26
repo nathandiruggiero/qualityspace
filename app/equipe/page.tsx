@@ -64,7 +64,7 @@ export default function EquipePage() {
       name: "Laure Meril",
       role: "Fondatrice & Directrice",
       bio: "Entrepreneuse dans l'âme, Laure a plus de 10 ans d'expérience dans l'événementiel et le marketing. Passionnée par l'entrepreneuriat féminin, elle a créé Quality Space WI pour mettre en valeur les talents guadeloupéens et créer un espace d'innovation et de partage.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300&auto=format&fit=crop",
+      image: "/images/team/laure_meril.jpeg",
       email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 01",
       instagram: "@qualityspace.w.i",
@@ -73,36 +73,27 @@ export default function EquipePage() {
       name: "Leïla Meril",
       role: "Directrice Artistique",
       bio: "Designer et artiste, Leïla apporte sa vision créative à Quality Space WI. Avec son expertise dans les arts visuels et son œil pour l'esthétique, elle crée une expérience immersive et inspirante pour tous les participants et visiteurs de l'événement.",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=300&auto=format&fit=crop",
+      image: "/images/team/leila_meril.jpeg",
       email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 02",
       instagram: "@qualityspace.w.i",
     },
     {
-      name: "Sophie Lambert",
+      name: "Caren PAMPHILE",
       role: "Responsable Communication",
-      bio: "Experte en communication digitale, Sophie gère la présence en ligne de Quality Space WI et développe des stratégies pour accroître la visibilité de l'événement. Sa créativité et son sens de l'innovation permettent de toucher un public toujours plus large.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300&auto=format&fit=crop",
+      bio: "Experte en communication digitale, Caren gère la présence en ligne de Quality Space WI et développe des stratégies pour accroître la visibilité de l'événement. Sa créativité et son sens de l'innovation permettent de toucher un public toujours plus large.",
+      image: "/images/team/caren_pamphile.jpeg",
       email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 03",
       instagram: "@qualityspace.w.i",
     },
     {
-      name: "Nadia Pierre",
+      name: "Judicaella GEORGES",
       role: "Coordinatrice des Exposants",
-      bio: "Nadia est le point de contact privilégié des exposants. Elle les accompagne dans leur préparation et veille à ce que chacun puisse présenter ses créations dans les meilleures conditions. Son sens de l'écoute et sa bienveillance sont très appréciés.",
-      image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=300&auto=format&fit=crop",
+      bio: "Judicaella est le point de contact privilégié des exposants. Elle les accompagne dans leur préparation et veille à ce que chacun puisse présenter ses créations dans les meilleures conditions. Son sens de l'écoute et sa bienveillance sont très appréciés.",
+      image: "/images/team/judicaella_georges.jpeg",
       email: "qualityspacewi@gmail.com",
       phone: "+590 690 00 00 05",
-      instagram: "@qualityspace.w.i",
-    },
-    {
-      name: "Thomas Legrand",
-      role: "Responsable Partenariats",
-      bio: "Thomas développe les relations avec les sponsors et partenaires de Quality Space WI. Grâce à son réseau et à sa connaissance du tissu économique local, il contribue à renforcer l'impact et la portée de l'événement.",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=300&auto=format&fit=crop",
-      email: "qualityspacewi@gmail.com",
-      phone: "+590 690 00 00 06",
       instagram: "@qualityspace.w.i",
     },
   ]
@@ -231,7 +222,7 @@ export default function EquipePage() {
             variants={staggerContainer}
             className="max-w-6xl mx-auto"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {teamMembers.map((member, index) => (
                 <motion.div key={index} variants={scaleUp} className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-br from-rose-300 to-rose-600 rounded-2xl opacity-70 blur-md transform transition-all duration-500 group-hover:opacity-100"></div>

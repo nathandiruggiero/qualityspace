@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Target, Megaphone, Heart, Sparkles } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -55,6 +56,52 @@ export default function SponsorsPage() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Données des sponsors
+  const sponsors = [
+    {
+      id: 1,
+      name: "ETS GOUNOUMAN",
+      logo: "/images/sponsors/ets-gounouman.png",
+      alt: "Logo ETS GOUNOUMAN",
+    },
+    {
+      id: 2,
+      name: "Rodolphe Scooter",
+      logo: "/images/sponsors/rodolphe-scooter.png",
+      alt: "Logo Rodolphe Scooter",
+    },
+    {
+      id: 3,
+      name: "CAR'IB LAURËLIA",
+      logo: "/images/sponsors/carib-laurelia.png",
+      alt: "Logo CAR'IB LAURËLIA GUADELOUPE",
+    },
+    {
+      id: 4,
+      name: "LM HINDI",
+      logo: "/images/sponsors/lm-hindi.png",
+      alt: "Logo LM HINDI",
+    },
+    {
+      id: 5,
+      name: "ORIGINAL LAVAGE",
+      logo: "/images/sponsors/original-lavage.png",
+      alt: "Logo ORIGINAL LAVAGE MULTI SERVICE",
+    },
+    {
+      id: 6,
+      name: "P.N. PNEUS SERVICES AUTO",
+      logo: "/images/sponsors/pn-pneus.png",
+      alt: "Logo P.N. PNEUS SERVICES AUTO",
+    },
+    {
+      id: 7,
+      name: "Les Trésors de LAURËLIA VILLA",
+      logo: "/images/sponsors/tresors-laurelia.png",
+      alt: "Logo Les Trésors de LAURËLIA VILLA",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white overflow-hidden">
       {/* Header */}
@@ -90,7 +137,7 @@ export default function SponsorsPage() {
                       item === "À propos"
                         ? "/a-propos"
                         : item === "Le concept"
-                          ? "/le-concept"
+                          ? "/a-propos"
                           : item === "Infos pratiques"
                             ? "/infos-pratiques"
                             : item === "Exposants"
@@ -278,18 +325,29 @@ export default function SponsorsPage() {
             </motion.div>
 
             <motion.div variants={fadeIn} className="bg-white p-8 rounded-2xl shadow-xl">
-              <h3 className="text-xl font-bold text-rose-800 mb-6 text-center">Logos partenaires déjà engagés</h3>
+              <h3 className="text-xl font-bold text-rose-800 mb-6 text-center">Partenaires officiels</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
-                {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-                  <div
-                    key={index}
-                    className="w-32 h-32 bg-rose-50 rounded-lg flex items-center justify-center border border-rose-100"
+                {sponsors.map((sponsor) => (
+                  <motion.div
+                    key={sponsor.id}
+                    className="w-full h-32 flex items-center justify-center p-4 hover:scale-105 transition-transform duration-300"
+                    whileHover={{ y: -5 }}
                   >
-                    <p className="text-rose-400 text-center text-sm">Logo partenaire</p>
-                  </div>
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={sponsor.logo || "/placeholder.svg"}
+                        alt={sponsor.alt}
+                        fill
+                        style={{ objectFit: "contain" }}
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </motion.div>
                 ))}
               </div>
-              <p className="text-rose-600 text-center mt-8 italic">Espace réservé pour les logos de nos partenaires</p>
+              <p className="text-rose-600 text-center mt-8 font-medium">
+                Merci à tous nos partenaires pour leur soutien précieux
+              </p>
             </motion.div>
           </motion.div>
         </div>
@@ -379,7 +437,7 @@ export default function SponsorsPage() {
               <Link href="/a-propos" className="text-rose-800 hover:text-rose-600 transition-colors">
                 À Propos
               </Link>
-              <Link href="/le-concept" className="text-rose-800 hover:text-rose-600 transition-colors">
+              <Link href="/a-propos" className="text-rose-800 hover:text-rose-600 transition-colors">
                 Le Concept
               </Link>
               <Link href="/infos-pratiques" className="text-rose-800 hover:text-rose-600 transition-colors">
