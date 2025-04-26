@@ -11,6 +11,7 @@ import { useMobile } from "@/hooks/use-mobile"
 import { useState, useEffect } from "react"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { submitContactForm } from "@/lib/actions"
 
 export default function ExposantsPage() {
   const fadeIn = {
@@ -355,7 +356,26 @@ export default function ExposantsPage() {
             <motion.div variants={scaleUp}>
               <Card className="border-none shadow-xl overflow-hidden bg-white/90 backdrop-blur-sm">
                 <CardContent className="p-6">
-                  <form className="space-y-6">
+                  <form
+                    action={async (formData) => {
+                      const result = await submitContactForm({
+                        name: formData.get("name") as string,
+                        email: formData.get("email") as string,
+                        subject: formData.get("activity") as string,
+                        message: formData.get("message") as string,
+                        formType: "exposant",
+                      })
+
+                      // Afficher un message de confirmation
+                      if (result.success) {
+                        // Vous pouvez utiliser une notification toast ici
+                        alert(result.message)
+                      } else {
+                        alert(result.message)
+                      }
+                    }}
+                    className="space-y-6"
+                  >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium text-rose-800">
@@ -363,6 +383,7 @@ export default function ExposantsPage() {
                         </label>
                         <Input
                           id="name"
+                          name="name"
                           placeholder="Votre nom"
                           className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
                         />
@@ -373,6 +394,7 @@ export default function ExposantsPage() {
                         </label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="Votre email"
                           className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
@@ -386,6 +408,7 @@ export default function ExposantsPage() {
                         </label>
                         <Input
                           id="phone"
+                          name="phone"
                           placeholder="Votre numéro de téléphone"
                           className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
                         />
@@ -396,6 +419,7 @@ export default function ExposantsPage() {
                         </label>
                         <Input
                           id="company"
+                          name="company"
                           placeholder="Nom de votre entreprise ou marque"
                           className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
                         />
@@ -407,6 +431,7 @@ export default function ExposantsPage() {
                       </label>
                       <select
                         id="activity"
+                        name="activity"
                         className="w-full rounded-md border-rose-200 focus:border-rose-500 focus:ring-rose-500"
                       >
                         <option value="">Sélectionnez votre domaine d'activité</option>
@@ -424,6 +449,7 @@ export default function ExposantsPage() {
                       </label>
                       <Textarea
                         id="message"
+                        name="message"
                         placeholder="Décrivez brièvement votre activité et ce que vous souhaitez présenter lors de l'événement"
                         rows={6}
                         className="border-rose-200 focus:border-rose-500 focus:ring-rose-500"
