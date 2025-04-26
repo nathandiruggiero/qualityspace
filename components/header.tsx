@@ -58,12 +58,12 @@ export default function Header() {
   }
 
   const navItems = [
-    { name: "À propos", path: "/a-propos" },
     { name: "Le concept", path: "/le-concept" },
     { name: "Infos pratiques", path: "/infos-pratiques" },
     { name: "Exposants", path: "/exposants" },
     { name: "Sponsors", path: "/sponsors" },
     { name: "L'équipe", path: "/equipe" },
+    { name: "À propos", path: "/a-propos" },
   ]
 
   return (
