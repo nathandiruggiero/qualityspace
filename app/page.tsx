@@ -160,7 +160,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Previous Events Slider */}
+      {/* Previous Events Slider
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-rose-50 to-transparent"></div>
         <div className="absolute -top-40 right-0 w-96 h-96 bg-gradient-to-bl from-rose-200/30 to-transparent rounded-full blur-3xl"></div>
@@ -257,7 +257,7 @@ export default function Home() {
             </Carousel>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Next Edition Highlight */}
       <section className="py-24 bg-gradient-to-b from-white to-rose-50 relative overflow-hidden">

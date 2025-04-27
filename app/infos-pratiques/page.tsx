@@ -215,11 +215,11 @@ export default function InfosPratiquesPage() {
                     <ul className="space-y-4">
                       <li className="flex justify-between items-center border-b border-rose-100 pb-2">
                         <span className="text-rose-800">Entrée adulte</span>
-                        <span className="font-bold text-rose-900">12 €</span>
+                        <span className="font-bold text-rose-900">15 €</span>
                       </li>
                       <li className="flex justify-between items-center border-b border-rose-100 pb-2">
                         <span className="text-rose-800">Entrée enfant</span>
-                        <span className="font-bold text-rose-900">7 €</span>
+                        <span className="font-bold text-rose-900">5 €</span>
                       </li>
                       <li className="flex justify-between items-center border-b border-rose-100 pb-2">
                         <span className="text-rose-800">Entrée famille (2 adultes + 2 enfants)</span>
@@ -247,7 +247,7 @@ export default function InfosPratiquesPage() {
                       </li>
                       <li className="flex justify-between items-center">
                         <span className="text-rose-800">Pack VIP pour 2 personnes</span>
-                        <span className="font-bold text-rose-900">100 €</span>
+                        <span className="font-bold text-rose-900">120 €</span>
                       </li>
                     </ul>
                     <div className="mt-6 p-4 bg-rose-50 rounded-lg">
@@ -328,46 +328,52 @@ export default function InfosPratiquesPage() {
                       location: "Entrée principale",
                     },
                     {
-                      time: "10:00",
+                      time: "09:00 - 14:00",
                       title: "Atelier Création de Bijoux",
                       description: "Apprenez à créer vos propres bijoux avec des matériaux locaux",
-                      location: "Espace Ateliers - Zone A",
+                      location: "Salle principale",
                     },
                     {
-                      time: "11:30",
-                      title: "Conférence sur l'Entrepreneuriat Féminin",
-                      description: "Témoignages inspirants de femmes entrepreneures guadeloupéennes",
-                      location: "Salle de conférence",
+                      time: "09:00 - 14:00",
+                      title: "Atelier Création de Bougies parfumées",
+                      description: "Apprenez à créer vos propres bougies parfumées avec des matériaux locaux",
+                      location: "Salle principale",
                     },
                     {
-                      time: "13:00",
-                      title: "Pause Déjeuner & Networking",
-                      description: "Profitez des stands de restauration et rencontrez d'autres participants",
-                      location: "Espace Food Court",
+                      time: "14:00",
+                      title: "Jessie Belleval",
+                      description: "Show musical",
+                      location: "Salle principale",
                     },
                     {
-                      time: "14:30",
+                      time: "15:00",
                       title: "Défilé de Mode",
                       description: "Découvrez les créations des designers locaux",
-                      location: "Scène principale",
+                      location: "Salle principale",
                     },
                     {
                       time: "16:00",
-                      title: "Atelier Bien-être",
-                      description: "Initiation aux techniques de relaxation et soins naturels",
-                      location: "Espace Bien-être - Zone B",
+                      title: "Showcase Musical",
+                      description: "Show case de Dasha",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "17:00",
+                      title: "Showcase Musical",
+                      description: "Show case de Quan Dan",
+                      location: "Salle principale",
                     },
                     {
                       time: "18:00",
                       title: "Showcase Musical",
-                      description: "Performance live d'artistes locaux",
-                      location: "Scène principale",
+                      description: "Artiste invité",
+                      location: "Salle principale",
                     },
                     {
-                      time: "20:00",
-                      title: "Cocktail de Clôture",
-                      description: "Célébration et remise de prix aux exposants",
-                      location: "Terrasse panoramique",
+                      time: "19:00 - 20:00",
+                      title: "Dj Luchshiy",
+                      description: "Show musical et clôture.",
+                      location: "Salle principale",
                     },
                   ].map((item, index) => (
                     <motion.div key={index} variants={fadeIn} className="relative mb-12 last:mb-0 flex">
