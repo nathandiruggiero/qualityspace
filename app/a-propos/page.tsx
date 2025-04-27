@@ -122,18 +122,17 @@ export default function AboutPage() {
                 </span>
               </h2>
               <p className="text-rose-800 mb-6 text-lg">
-                Quality Space WI est né en 2023 de la vision de deux entrepreneuses guadeloupéennes passionnées, Laure
-                et Leïla Meril, qui souhaitaient créer un espace d'échange et de promotion pour les talents locaux.
+              Quality Space WI est né en 2024 de la vision de Laure Meril, une entrepreneuse guadeloupéenne passionnée,
+              qui souhaitait créer un espace d'échange et de promotion pour les talents locaux.
               </p>
               <p className="text-rose-800 mb-6 text-lg">
-                Face au constat d'un manque de visibilité pour les entrepreneurs locaux, particulièrement les femmes,
-                elles ont imaginé un événement qui rassemblerait sous un même toit le meilleur de la Guadeloupe en
-                matière de mode, bien-être, gastronomie et culture.
+              Face au constat d'un manque de visibilité pour les entrepreneurs locaux,particulièrement les femmes,
+              elle a imaginé un événement rassemblant sous un même toit le meilleur de le en maa Guadelouptière de mode,
+              bien-être, gastronomie et culture.
               </p>
               <p className="text-rose-800 mb-8 text-lg">
-                Notre vision est de promouvoir l'entrepreneuriat local en créant un écosystème dynamique où les
-                créateurs peuvent présenter leurs produits, partager leur savoir-faire et inspirer la nouvelle
-                génération d'entrepreneurs guadeloupéens.
+              Sa vision est de promouvoir l'entrepreneuriat local en créant un écosystème dynamique où les créateurs peuvent présenter leurs produits,
+              partager leur savoir-faire et inspirer la nouvelle génération d'entrepreneurs guadeloupéens.
               </p>
 
               <div className="flex flex-wrap gap-4">
