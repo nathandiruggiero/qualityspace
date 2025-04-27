@@ -426,7 +426,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-rose-300 to-rose-500 rounded-2xl transform rotate-3 scale-95 opacity-20 blur-md"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/edition_2024.png"
+                  src="/images/edition_excellence.png"
                   alt="Quality Space WI Event"
                   width={600}
                   height={600}
