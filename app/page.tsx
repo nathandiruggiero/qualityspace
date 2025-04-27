@@ -185,7 +185,7 @@ export default function Home() {
               </span>
             </motion.h2>
             <motion.p variants={fadeIn} className="text-lg text-rose-800">
-              Revivez les moments forts de nos événements passés
+              Venez découvrir nos différents
             </motion.p>
           </motion.div>
 
@@ -486,41 +486,55 @@ export default function Home() {
                   time: "09:00",
                   title: "Ouverture des Portes",
                   description: "Accueil des visiteurs et présentation de l'événement",
+                  location: "Entrée principale",
                 },
                 {
-                  time: "10:00",
+                  time: "09:00 - 14:00",
                   title: "Atelier Création de Bijoux",
                   description: "Apprenez à créer vos propres bijoux avec des matériaux locaux",
+                  location: "Salle principale",
                 },
                 {
-                  time: "11:30",
-                  title: "Conférence sur l'Entrepreneuriat Féminin",
-                  description: "Témoignages inspirants de femmes entrepreneures guadeloupéennes",
+                  time: "09:00 - 14:00",
+                  title: "Atelier Création de Bougies parfumées",
+                  description: "Apprenez à créer vos propres bougies parfumées avec des matériaux locaux",
+                  location: "Salle principale",
                 },
                 {
-                  time: "13:00",
-                  title: "Pause Déjeuner & Networking",
-                  description: "Profitez des stands de restauration et rencontrez d'autres participants",
+                  time: "14:00",
+                  title: "Jessie Belleval",
+                  description: "Show musical",
+                  location: "Salle principale",
                 },
                 {
-                  time: "14:30",
+                  time: "15:00",
                   title: "Défilé de Mode",
                   description: "Découvrez les créations des designers locaux",
+                  location: "Salle principale",
                 },
                 {
                   time: "16:00",
-                  title: "Atelier Bien-être",
-                  description: "Initiation aux techniques de relaxation et soins naturels",
+                  title: "Showcase Musical",
+                  description: "Show case de Dasha",
+                  location: "Salle principale",
+                },
+                {
+                  time: "17:00",
+                  title: "Showcase Musical",
+                  description: "Show case de Quan Dan",
+                  location: "Salle principale",
                 },
                 {
                   time: "18:00",
                   title: "Showcase Musical",
-                  description: "Performance live d'artistes locaux",
+                  description: "Artiste invité",
+                  location: "Salle principale",
                 },
                 {
-                  time: "20:00",
-                  title: "Cocktail de Clôture",
-                  description: "Célébration et remise de prix aux exposants",
+                  time: "19:00 - 20:00",
+                  title: "Dj Luchshiy",
+                  description: "Show musical et clôture.",
+                  location: "Salle principale",
                 },
               ].map((item, index) => (
                 <motion.div key={index} variants={fadeIn} className="relative mb-12 last:mb-0 flex">
