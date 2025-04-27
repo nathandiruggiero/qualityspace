@@ -299,7 +299,7 @@ export default function Home() {
                       <div>
                         <h3 className="font-bold text-rose-800 text-lg mb-2">Animations :</h3>
                         <p className="text-rose-700">
-                          Photobooth spécial Fête des Mères, jeux concours, DJ sets, ambiance festive.
+                          Show Case, jeux concours, DJ sets, ambiance festive.
                         </p>
                       </div>
 
@@ -309,8 +309,7 @@ export default function Home() {
                       </div>
 
                       <div>
-                        <h3 className="font-bold text-rose-800 text-lg mb-2">Animatrice :</h3>
-                        <p className="text-rose-700">Bénédicte Baker</p>
+                        <h3 className="font-bold text-rose-800 text-lg mb-2">Invité Mystère</h3>
                       </div>
                     </div>
 
@@ -352,7 +351,8 @@ export default function Home() {
                   </div>
                   <div className="relative h-full min-h-[300px] md:min-h-full">
                     <Image
-                      src="https://images.unsplash.com/photo-1559561853-08451507cbe7?q=80&w=800&auto=format&fit=crop"
+                      // src="https://images.unsplash.com/photo-1559561853-08451507cbe7?q=80&w=800&auto=format&fit=crop"
+                      src="/images/image_fete_mere.jpg"
                       alt="Édition Spéciale Fête des Mères"
                       fill
                       className="object-cover"
