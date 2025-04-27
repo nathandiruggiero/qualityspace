@@ -160,6 +160,126 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Programme Section */}
+      <section className="py-16 md:py-24 bg-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-rose-50 to-transparent"></div>
+        <div className="absolute -top-40 right-0 w-96 h-96 bg-gradient-to-bl from-rose-200/30 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 left-0 w-96 h-96 bg-gradient-to-tr from-rose-200/30 to-transparent rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <motion.div variants={fadeIn}>
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
+                24 Mai 2025
+              </Badge>
+            </motion.div>
+            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
+                Programme Détaillé
+              </span>
+            </motion.h2>
+            <motion.p variants={fadeIn} className="text-lg text-rose-800">
+              Planifiez votre journée et ne manquez aucun moment fort
+            </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-4xl mx-auto"
+          >
+            <Card className="border-none shadow-xl">
+              <CardContent className="p-6">
+                <div className="relative pl-8 py-8 pr-4">
+                  <div className="absolute top-0 bottom-0 left-16 w-0.5 bg-gradient-to-b from-rose-300 via-rose-500 to-rose-300"></div>
+
+                  {[
+                    {
+                      time: "09:00",
+                      title: "Ouverture des Portes",
+                      description: "Accueil des visiteurs et présentation de l'événement",
+                      location: "Entrée principale",
+                    },
+                    {
+                      time: "09:00 - 14:00",
+                      title: "Atelier Création de Bijoux",
+                      description: "Apprenez à créer vos propres bijoux avec des matériaux locaux",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "09:00 - 14:00",
+                      title: "Atelier Création de Bougies parfumées",
+                      description: "Apprenez à créer vos propres bougies parfumées avec des matériaux locaux",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "14:00",
+                      title: "Jessie Belleval",
+                      description: "Show musical",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "15:00",
+                      title: "Défilé de Mode",
+                      description: "Découvrez les créations des designers locaux",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "16:00",
+                      title: "Showcase Musical",
+                      description: "Show case de Dasha",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "17:00",
+                      title: "Showcase Musical",
+                      description: "Show case de Quan Dan",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "18:00",
+                      title: "Showcase Musical",
+                      description: "Artiste invité",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "19:00 - 20:00",
+                      title: "Dj Luchshiy",
+                      description: "Show musical et clôture.",
+                      location: "Salle principale",
+                    },
+                  ].map((item, index) => (
+                    <motion.div key={index} variants={fadeIn} className="relative mb-12 last:mb-0 flex">
+                      <div className="absolute -left-8 mt-1">
+                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center text-white shadow-lg">
+                          <span className="text-sm font-bold">{item.time}</span>
+                        </div>
+                      </div>
+                      <div className="ml-12 bg-gradient-to-r from-white to-rose-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 w-full">
+                        <h3 className="font-bold text-rose-800 text-xl">{item.title}</h3>
+                        <p className="text-rose-700 mt-2">{item.description}</p>
+                        <div className="flex items-center mt-3 text-rose-600">
+                          <MapPin className="w-4 h-4 mr-1" />
+                          <span className="text-sm">{item.location}</span>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Previous Events Slider
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-rose-50 to-transparent"></div>
