@@ -50,7 +50,7 @@ export default function Footer() {
               asChild
               className="bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700"
             >
-              <Link href="https://example.com/tickets">Réserver</Link>
+              <Link href="https://my.bizouk.com/quality-space-edition-2">Réserver</Link>
             </Button>
           </div>
         </div>

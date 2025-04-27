@@ -192,7 +192,7 @@ export default function InfosPratiquesPage() {
             <motion.div variants={scaleUp} className="relative mb-8">
               <div className="absolute -inset-1 bg-gradient-to-r from-rose-400 to-rose-600 rounded-full opacity-70 blur-md"></div>
               <Link
-                href="https://example.com/tickets"
+                href="https://my.bizouk.com/quality-space-edition-2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center justify-center w-full h-16 px-10 py-4 bg-gradient-to-r from-rose-500 to-rose-600 text-white text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
