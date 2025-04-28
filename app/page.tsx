@@ -311,6 +311,11 @@ export default function Home() {
                       <div>
                         <h3 className="font-bold text-rose-800 text-lg mb-2">Invité Mystère</h3>
                       </div>
+
+                      <div>
+                        <h3 className="font-bold text-rose-800 text-lg mb-2">Animatrice :</h3>
+                        <p className="text-rose-700">Bénédicte Baker</p>
+                      </div>
                     </div>
 
                     <div className="flex items-center mb-6">
@@ -501,9 +506,21 @@ export default function Home() {
                   location: "Salle principale",
                 },
                 {
+                  time: "09:00 - 14:00",
+                  title: "Ambiance Musical",
+                  description: "DJ TomTom",
+                  location: "Salle principale",
+                },
+                {
                   time: "14:00",
-                  title: "Jessie Belleval",
+                  title: "Jessye Belleval",
                   description: "Show musical",
+                  location: "Salle principale",
+                },
+                {
+                  time: "14:00 - 19:00",
+                  title: "Ambiance Musical",
+                  description: "DJ Saam",
                   location: "Salle principale",
                 },
                 {
@@ -532,7 +549,7 @@ export default function Home() {
                 },
                 {
                   time: "19:00 - 20:00",
-                  title: "Dj Luchshiy",
+                  title: "Dj LushChiy",
                   description: "Show musical et clôture.",
                   location: "Salle principale",
                 },

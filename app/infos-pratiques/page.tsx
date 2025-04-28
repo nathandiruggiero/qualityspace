@@ -340,9 +340,21 @@ export default function InfosPratiquesPage() {
                       location: "Salle principale",
                     },
                     {
+                      time: "09:00 - 14:00",
+                      title: "Ambiance Musical",
+                      description: "DJ TomTom",
+                      location: "Salle principale",
+                    },
+                    {
                       time: "14:00",
-                      title: "Jessie Belleval",
+                      title: "Jessye Belleval",
                       description: "Show musical",
+                      location: "Salle principale",
+                    },
+                    {
+                      time: "14:00 - 19:00",
+                      title: "Ambiance Musical",
+                      description: "DJ Saam",
                       location: "Salle principale",
                     },
                     {
@@ -371,7 +383,7 @@ export default function InfosPratiquesPage() {
                     },
                     {
                       time: "19:00 - 20:00",
-                      title: "Dj Luchshiy",
+                      title: "Dj LushChiy",
                       description: "Show musical et clôture.",
                       location: "Salle principale",
                     },
