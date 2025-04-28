@@ -494,21 +494,21 @@ export default function Home() {
                   location: "Entrée principale",
                 },
                 {
-                  time: "09:00 - 14:00",
+                  time: "09:00",
                   title: "Atelier Création de Bijoux",
-                  description: "Apprenez à créer vos propres bijoux avec des matériaux locaux",
+                  description: "Apprenez à créer vos propres bijoux avec des matériaux locaux. De 09h00 à 14h00.",
                   location: "Salle principale",
                 },
                 {
-                  time: "09:00 - 14:00",
+                  time: "09:00",
                   title: "Atelier Création de Bougies parfumées",
-                  description: "Apprenez à créer vos propres bougies parfumées avec des matériaux locaux",
+                  description: "Apprenez à créer vos propres bougies parfumées avec des matériaux locaux. De 09h00 à 14h00.",
                   location: "Salle principale",
                 },
                 {
-                  time: "09:00 - 14:00",
+                  time: "09:00",
                   title: "Ambiance Musical",
-                  description: "DJ TomTom",
+                  description: "DJ TomTom, de 09h00 à 14h00.",
                   location: "Salle principale",
                 },
                 {
@@ -518,9 +518,9 @@ export default function Home() {
                   location: "Salle principale",
                 },
                 {
-                  time: "14:00 - 19:00",
+                  time: "14:00",
                   title: "Ambiance Musical",
-                  description: "DJ Saam",
+                  description: "DJ Saam, de 14h00 à 19h00.",
                   location: "Salle principale",
                 },
                 {
@@ -548,9 +548,9 @@ export default function Home() {
                   location: "Salle principale",
                 },
                 {
-                  time: "19:00 - 20:00",
+                  time: "19:00",
                   title: "Dj LushChiy",
-                  description: "Show musical et clôture.",
+                  description: "Show musical et clôture. Jusqu'à 20h.",
                   location: "Salle principale",
                 },
               ].map((item, index) => (
