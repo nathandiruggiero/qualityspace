@@ -305,7 +305,7 @@ export default function Home() {
 
                       <div>
                         <h3 className="font-bold text-rose-800 text-lg mb-2">Performances artistiques :</h3>
-                        <p className="text-rose-700">Jessie Belvalle, Dascha, Quan Dan, DJ Luschy</p>
+                        <p className="text-rose-700">Jessye Belvalle, Dasha, Quan Dan, DJ Lushchiy</p>
                       </div>
 
                       <div>
