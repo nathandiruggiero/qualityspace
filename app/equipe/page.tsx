@@ -207,8 +207,12 @@ export default function EquipePage() {
                 </p>
 
                 <div className="space-y-6 mb-8">
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
+                  {/* Email - Icône et texte cliquables */}
+                  <a
+                    href="mailto:qualityspacewi@gmail.com"
+                    className="flex items-center group hover:bg-rose-50 p-2 rounded-lg transition-colors"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4 group-hover:bg-rose-200 transition-colors">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -227,42 +231,20 @@ export default function EquipePage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-rose-800 text-lg">Email</h3>
-                      <a
-                        href="mailto:qualityspacewi@gmail.com"
-                        className="text-rose-600 hover:text-rose-800 transition-colors"
-                      >
+                      <span className="text-rose-600 group-hover:text-rose-800 transition-colors">
                         qualityspacewi@gmail.com
-                      </a>
+                      </span>
                     </div>
-                  </div>
+                  </a>
 
-                  {/* <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-phone"
-                      >
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-rose-800 text-lg">Téléphone</h3>
-                      <a href="tel:+590690000000" className="text-rose-600 hover:text-rose-800 transition-colors">
-                        +590 690 00 00 00
-                      </a>
-                    </div>
-                  </div> */}
-
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
+                  {/* Instagram - Icône et texte cliquables */}
+                  <a
+                    href="https://instagram.com/qualityspace.w.i"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center group hover:bg-rose-50 p-2 rounded-lg transition-colors"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4 group-hover:bg-rose-200 transition-colors">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -282,19 +264,20 @@ export default function EquipePage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-rose-800 text-lg">Instagram</h3>
-                      <a
-                        href="https://instagram.com/qualityspace.w.i"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-rose-600 hover:text-rose-800 transition-colors"
-                      >
+                      <span className="text-rose-600 group-hover:text-rose-800 transition-colors">
                         @qualityspace.w.i
-                      </a>
+                      </span>
                     </div>
-                  </div>
+                  </a>
 
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
+                  {/* TikTok - Icône et texte cliquables */}
+                  <a
+                    href="https://tiktok.com/@quality.space.w.i7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center group hover:bg-rose-50 p-2 rounded-lg transition-colors"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4 group-hover:bg-rose-200 transition-colors">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -312,19 +295,20 @@ export default function EquipePage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-rose-800 text-lg">TikTok</h3>
-                      <a
-                        href="https://tiktok.com/@quality.space.w.i7"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-rose-600 hover:text-rose-800 transition-colors"
-                      >
+                      <span className="text-rose-600 group-hover:text-rose-800 transition-colors">
                         @quality.space.w.i7
-                      </a>
+                      </span>
                     </div>
-                  </div>
+                  </a>
 
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
+                  {/* Adresse - Icône et texte cliquables */}
+                  <a
+                    href="https://maps.google.com/?q=Hôtel+Arawak,+41+Pointe+de+la+Verdure,+Gosier,+Guadeloupe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center group hover:bg-rose-50 p-2 rounded-lg transition-colors"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4 group-hover:bg-rose-200 transition-colors">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -343,9 +327,11 @@ export default function EquipePage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-rose-800 text-lg">Adresse</h3>
-                      <p className="text-rose-600">Hôtel Arawak, 41 Pointe de la Verdure, Gosier, Guadeloupe</p>
+                      <span className="text-rose-600 group-hover:text-rose-800 transition-colors">
+                        Hôtel Arawak, 41 Pointe de la Verdure, Gosier, Guadeloupe
+                      </span>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </motion.div>
 
