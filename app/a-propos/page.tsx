@@ -152,7 +152,7 @@ export default function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/team/laure_meril.jpg"
-                  alt="Fondatrices de Quality Space WI"
+                  alt="Fondatrice de Quality Space WI"
                   width={600}
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl transform transition-transform duration-700 hover:scale-105"
