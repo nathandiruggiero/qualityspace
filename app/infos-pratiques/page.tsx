@@ -383,7 +383,7 @@ export default function InfosPratiquesPage() {
                     },
                     {
                       time: "19:00",
-                      title: "Dj LushChiy",
+                      title: "Dj Luchshiy",
                       description: "Show musical et clôture. Jusqu'à 22h.",
                       location: "Salle principale",
                     },

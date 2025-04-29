@@ -305,7 +305,7 @@ export default function Home() {
 
                       <div>
                         <h3 className="font-bold text-rose-800 text-lg mb-2">Performances artistiques :</h3>
-                        <p className="text-rose-700">Jessye Belvalle, Dasha, Quan Dan, DJ Lushchiy</p>
+                        <p className="text-rose-700">Jessye Belvalle, Dasha, Quan Dan, DJ Luchshiy</p>
                       </div>
 
                       <div>
@@ -549,7 +549,7 @@ export default function Home() {
                 },
                 {
                   time: "19:00",
-                  title: "Dj LushChiy",
+                  title: "Dj Luchshiy",
                   description: "Show musical et clôture. Jusqu'à 22h.",
                   location: "Salle principale",
                 },
