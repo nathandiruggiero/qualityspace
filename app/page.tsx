@@ -550,7 +550,7 @@ export default function Home() {
                 {
                   time: "19:00",
                   title: "Dj LushChiy",
-                  description: "Show musical et clôture. Jusqu'à 20h.",
+                  description: "Show musical et clôture. Jusqu'à 22h.",
                   location: "Salle principale",
                 },
               ].map((item, index) => (
