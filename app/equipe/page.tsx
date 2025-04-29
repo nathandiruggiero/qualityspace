@@ -294,12 +294,6 @@ export default function EquipePage() {
                   </div>
 
                   <div className="flex items-center">
-                    <a
-                        href="https://tiktok.com/@quality.space.w.i7"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-rose-600 hover:text-rose-800 transition-colors"
-                      >
                     <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 mr-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -318,9 +312,15 @@ export default function EquipePage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-rose-800 text-lg">TikTok</h3>
+                      <a
+                        href="https://tiktok.com/@quality.space.w.i7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-rose-600 hover:text-rose-800 transition-colors"
+                      >
                         @quality.space.w.i7
+                      </a>
                     </div>
-                    </a>
                   </div>
 
                   <div className="flex items-center">
