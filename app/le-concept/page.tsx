@@ -138,7 +138,7 @@ export default function ConceptPage() {
               <div className="absolute -inset-1 bg-gradient-to-br from-rose-300 to-rose-600 rounded-2xl opacity-70 blur-md"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1591115765373-5207764f72e4?q=80&w=1200&auto=format&fit=crop"
+                  src="/images/edition_excellence.png"
                   alt="Quality Space Event"
                   width={1200}
                   height={600}
