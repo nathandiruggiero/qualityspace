@@ -88,7 +88,7 @@ export default function Header() {
 
               {/* Texte du logo au centre */}
               <Link href="/" className="flex items-center">
-                <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
+                <span className="font-bold text-sm text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
                   Quality Space WI
                 </span>
               </Link>
@@ -130,8 +130,14 @@ export default function Header() {
           >
             <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-rose-600 to-rose-700 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
             <span className="relative flex items-center">
-              Réserver
-              <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
+              {isMobile ? (
+                <>Réserver</>
+              ) : (
+                <>
+                  Réserver
+                  <Sparkles className="w-4 h-4 ml-2 animate-pulse" />
+                </>
+              )}
             </span>
           </Link>
         </div>
