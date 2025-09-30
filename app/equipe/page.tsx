@@ -57,32 +57,7 @@ export default function EquipePage() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const teamMembers = [
-    {
-      name: "Leïla Meril",
-      role: "Responsable Communication et Médias",
-      bio: "",
-      image: "/images/team/leila_meril.jpg",
-    },
-    {
-      name: "Caren PAMPHILE",
-      role: "Assistante de Direction",
-      bio: "",
-      image: "/images/team/caren_pamphile.jpeg",
-    },
-    {
-      name: "Judicaella GEORGES",
-      role: "Assistante Administrative",
-      bio: "",
-      image: "/images/team/judicaella_georges.jpeg",
-    },
-    {
-      name: "Natty ANDYPAIN",
-      role: "Responsable Réseau et Support Opérationnel",
-      bio: "",
-      image: "/images/team/natty_andypain.jpeg",
-    },
-  ]
+  const teamMembers = []
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gold-50 to-white overflow-hidden">
@@ -119,7 +94,7 @@ export default function EquipePage() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-gold-800 mb-8 max-w-2xl mx-auto">
-              Découvrez les personnes passionnées qui font de Quality Space WI un événement unique
+              Découvrez les personnes passionnées qui font de Laurëlia Events un événement unique
             </motion.p>
           </motion.div>
         </div>
@@ -195,7 +170,7 @@ export default function EquipePage() {
                   </span>
                 </h2>
                 <p className="text-gold-800 mb-8 text-lg">
-                  Vous avez des questions sur Quality Space WI ? Vous souhaitez devenir exposant ou partenaire ?
+                  Vous avez des questions sur Laurëlia Events ? Vous souhaitez devenir exposant ou partenaire ?
                   N'hésitez pas à nous contacter, nous vous répondrons dans les plus brefs délais.
                 </p>
 

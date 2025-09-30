@@ -148,7 +148,7 @@ export default function ConceptPage() {
                 <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                   <h3 className="text-2xl font-bold mb-2">Un Espace de Rencontre et d'Échange</h3>
                   <p className="text-lg">
-                    Quality Space WI rassemble les talents guadeloupéens dans un cadre inspirant et bienveillant.
+                    Laurëlia Events rassemble les talents guadeloupéens dans un cadre inspirant et bienveillant.
                   </p>
                 </div>
               </div>
@@ -256,11 +256,9 @@ export default function ConceptPage() {
           >
             <div className="text-6xl md:text-8xl text-amber-300 mb-6">"</div>
             <p className="text-2xl md:text-3xl text-neutral-800 mb-8 italic font-light">
-              Quality Space WI est plus qu'un événement, c'est un mouvement qui célèbre l'excellence caribéenne et
+              Laurëlia Events est plus qu'un événement, c'est un mouvement qui célèbre l'excellence caribéenne et
               inspire la nouvelle génération d'entrepreneurs guadeloupéens à rêver grand et à créer avec passion.
             </p>
-            <p className="text-xl font-bold text-neutral-900">Leïla Meril</p>
-            <p className="text-neutral-700">Fondatrice de Quality Space WI</p>
           </motion.div>
         </div>
       </section>
@@ -292,7 +290,7 @@ export default function ConceptPage() {
             </motion.h2>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-neutral-700 mb-10 max-w-2xl mx-auto">
-              Que vous soyez entrepreneur, créateur ou visiteur, Quality Space WI vous ouvre ses portes pour une
+              Que vous soyez entrepreneur, créateur ou visiteur, Laurëlia Events vous ouvre ses portes pour une
               expérience unique en Guadeloupe.
             </motion.p>
 

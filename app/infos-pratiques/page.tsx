@@ -71,7 +71,7 @@ export default function InfosPratiquesPage() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-neutral-700 mb-8 max-w-2xl mx-auto">
-              Toutes les informations essentielles pour profiter pleinement de votre expérience Quality Space WI
+              Toutes les informations essentielles pour profiter pleinement de votre expérience Laurëlia Events
             </motion.p>
           </motion.div>
         </div>
@@ -150,13 +150,12 @@ export default function InfosPratiquesPage() {
 
             <motion.div variants={fadeIn} className="space-y-6">
               {[
-                { time: "10h00", activity: "Ouverture des portes" },
-                { time: "11h00 - 12h00", activity: "Défilé de mode" },
-                { time: "12h00 - 14h00", activity: "Découverte des exposants" },
-                { time: "14h00 - 15h00", activity: "Performance des SBK dancers" },
-                { time: "15h00 - 16h00", activity: "Groupe de carnaval" },
-                { time: "16h00 - 17h00", activity: "Défilé de mode" },
-                { time: "17h00 - 20h00", activity: "Ambiance DJ avec DJ Jahny, DJ Mike, DJ Tropic" },
+                { time: "09h00", activity: "Ouverture des portes" },
+                { time: "11h00", activity: "Fashion Show - Reines Beauté Noirs" },
+                { time: "13h00", activity: "Fashion Show - LM Hindi" },
+                { time: "15h00", activity: "Performance des SBK dancers" },
+                { time: "17h00", activity: "Groupe de carnaval" },
+                { time: "09h00 - 22h00", activity: "Ambiance DJ avec DJ TomTom" },
               ].map((item, index) => (
                 <Card key={index} className="border-l-4 border-amber-500 shadow-md hover:shadow-lg transition-all">
                   <CardContent className="p-6 flex items-center gap-6">
@@ -319,8 +318,7 @@ export default function InfosPratiquesPage() {
                     Puis-je venir avec des enfants ?
                   </AccordionTrigger>
                   <AccordionContent className="text-neutral-600">
-                    Absolument ! Quality Space WI est un événement familial. Nous proposons un tarif famille à 8€ pour 4
-                    personnes.
+                    Absolument ! Laurëlia Events est un événement familial. Nous proposons un tarif famille à 8€ pour 4 personnes.
                   </AccordionContent>
                 </AccordionItem>
 

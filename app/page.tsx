@@ -95,7 +95,7 @@ export default function Home() {
 
             <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-700 via-gold-600 to-gold-500">
-                Quality Space WI
+                Laurëlia Events
               </span>
             </motion.h1>
 
@@ -286,7 +286,7 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-gold-800 mb-6 text-lg">
-                Quality Space WI est un événement culturel et entrepreneurial majeur en Guadeloupe. Nous réunissons plus
+                Laurëlia Events est un événement culturel et entrepreneurial majeur en Guadeloupe. Nous réunissons plus
                 de 30 entrepreneurs locaux dans les domaines de la mode, du bien-être, de la gastronomie et du design.
               </p>
               <p className="text-gold-800 mb-8 text-lg">
@@ -320,7 +320,7 @@ export default function Home() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/edition_excellence.png"
-                  alt="Quality Space WI Event"
+                  alt="Laurëlia Events"
                   width={600}
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl transform transition-transform duration-700 hover:scale-105"
@@ -396,7 +396,7 @@ export default function Home() {
                   description: "Performance d'un groupe de carnaval (nom à confirmer)",
                 },
                 {
-                  time: "11:00-19:00",
+                  time: "09:00 22:00",
                   title: "Ambiance DJ",
                   description: "DJ TomTom et autres DJs à confirmer tout au long de l'événement",
                 },

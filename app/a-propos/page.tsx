@@ -91,7 +91,7 @@ export default function AboutPage() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-gold-800 mb-8 max-w-2xl mx-auto">
-              Découvrez l'histoire, la vision et les valeurs qui animent Quality Space WI, un événement unique en
+              Découvrez l'histoire, la vision et les valeurs qui animent Laurëlia Events, un événement unique en
               Guadeloupe.
             </motion.p>
           </motion.div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 </span>
               </h2>
               <p className="text-gold-800 mb-6 text-lg">
-                Quality Space WI est né en 2024 d'une vision passionnée pour créer un espace d'échange et de promotion
+                Laurëlia Events est né en 2024 d'une vision passionnée pour créer un espace d'échange et de promotion
                 pour les talents locaux en Guadeloupe.
               </p>
               <p className="text-gold-800 mb-6 text-lg">
@@ -152,14 +152,14 @@ export default function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/edition_excellence.png"
-                  alt="Quality Space WI"
+                  alt="Laurëlia Events"
                   width={600}
                   height={600}
                   className="w-full h-auto object-cover rounded-2xl transform transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gold-900/60 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">Quality Space WI</h3>
+                  <h3 className="text-xl font-bold mb-2">Laurëlia Events</h3>
                   <p>Événement entrepreneurial en Guadeloupe</p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function AboutPage() {
                   year: "2024",
                   title: "Première Édition",
                   description:
-                    "Lancement de la première édition de Quality Space WI qui a rassemblé plus de 30 exposants et 300 visiteurs.",
+                    "Lancement de la première édition de Laurëlia Events qui a rassemblé plus de 30 exposants et 300 visiteurs.",
                   icon: "🎉",
                 },
                 {
@@ -231,7 +231,7 @@ export default function AboutPage() {
                   year: "Futur",
                   title: "Vision à Long Terme",
                   description:
-                    "Ambition de faire de Quality Space WI un événement incontournable en Guadeloupe et dans toute la Caraïbe.",
+                    "Ambition de faire de Laurëlia Events un événement incontournable en Guadeloupe et dans toute la Caraïbe.",
                   icon: "🌍",
                 },
               ].map((item, index) => (
@@ -379,7 +379,7 @@ export default function AboutPage() {
             </motion.h2>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-gold-800 mb-10 max-w-2xl mx-auto">
-              Que vous soyez entrepreneur, créateur ou visiteur, Quality Space WI vous ouvre ses portes pour une
+              Que vous soyez entrepreneur, créateur ou visiteur, Laurëlia Events vous ouvre ses portes pour une
               expérience unique en Guadeloupe.
             </motion.p>
 
@@ -428,10 +428,10 @@ export default function AboutPage() {
           >
             <div className="text-6xl md:text-8xl text-gold-300 mb-6">"</div>
             <p className="text-2xl md:text-3xl text-gold-800 mb-8 italic font-light">
-              Quality Space WI est plus qu'un événement, c'est un mouvement qui célèbre l'excellence caribéenne et
+              Laurëlia Events est plus qu'un événement, c'est un mouvement qui célèbre l'excellence caribéenne et
               inspire la nouvelle génération d'entrepreneurs guadeloupéens à rêver grand et à créer avec passion.
             </p>
-            <p className="text-xl font-bold text-gold-900">L'équipe Quality Space WI</p>
+            <p className="text-xl font-bold text-gold-900">L'équipe Laurëlia Events</p>
             <p className="text-gold-700">Organisateurs de l'événement</p>
           </motion.div>
         </div>
