@@ -204,7 +204,7 @@ export default function EquipePage() {
                   </a>
 
                   <a
-                    href="https://instagram.com/qualityspace.w.i"
+                    href="https://instagram.com/laurelia.events"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center group hover:bg-gold-50 p-2 rounded-lg transition-colors"

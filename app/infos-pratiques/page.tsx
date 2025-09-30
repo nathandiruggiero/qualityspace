@@ -375,13 +375,13 @@ export default function InfosPratiquesPage() {
                 {
                   icon: <Mail className="w-6 h-6" />,
                   title: "Email",
-                  content: "contact@qualityspace.gp",
+                  content: "qualityspacewi@gmail.com",
                   color: "from-amber-500 to-amber-600",
                 },
                 {
                   icon: <MessageCircle className="w-6 h-6" />,
                   title: "Réseaux Sociaux",
-                  content: "@qualityspacewi",
+                  content: "@laurelia.events",
                   color: "from-amber-500 to-amber-600",
                 },
               ].map((contact, index) => (
