@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Quality Space WI",
+  title: "Laurëlia Events",
   description: "L'événement lifestyle, bien-être et entrepreneuriat local en Guadeloupe",
   icons: {
     icon: [
