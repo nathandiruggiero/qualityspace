@@ -245,7 +245,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-full min-h-[300px] md:min-h-full">
                     <Image
-                      src="/images/image_fete_mere.jpg"
+                      src="/images/1years.jpeg"
                       alt="Édition Spéciale Anniversaire"
                       fill
                       className="object-cover"
