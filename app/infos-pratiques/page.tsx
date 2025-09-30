@@ -1,14 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
 import Link from "next/link"
-import { MapPin, Clock, Ticket, Car, Bus, Coffee, MouseOffIcon as DogOff, Baby } from "lucide-react"
+import { MapPin, Calendar, Clock, Euro, Users, ArrowRight, Phone, Mail, MessageCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { useMobile } from "@/hooks/use-mobile"
-import { useState, useEffect } from "react"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
@@ -41,37 +38,17 @@ export default function InfosPratiquesPage() {
     },
   }
 
-  const [isScrolled, setIsScrolled] = useState(false)
-  const isMobile = useMobile()
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white overflow-hidden">
-      {/* Header */}
+    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white overflow-hidden">
       <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607962837359-5e7e89f86776?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-rose-100/70 via-white/50 to-white/90"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,228,230,0.8)_0%,rgba(255,255,255,0)_60%)]"></div>
-
-          {/* Decorative elements */}
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-rose-300/20 to-rose-500/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gradient-to-tr from-rose-200/20 to-rose-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-amber-100/70 via-white/50 to-white/90"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(251,191,36,0.3)_0%,rgba(255,255,255,0)_60%)]"></div>
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-amber-300/20 to-amber-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gradient-to-tr from-amber-200/20 to-amber-400/20 rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -82,28 +59,75 @@ export default function InfosPratiquesPage() {
             className="max-w-4xl mx-auto text-center"
           >
             <motion.div variants={fadeIn}>
-              <Badge className="mb-4 bg-gradient-to-r from-rose-300 to-rose-200 text-rose-800 hover:from-rose-400 hover:to-rose-300 transition-all duration-300 px-4 py-1.5 text-sm font-medium rounded-full">
-                Édition 2025
+              <Badge className="mb-4 bg-gradient-to-r from-amber-400 to-amber-300 text-amber-900 hover:from-amber-500 hover:to-amber-400 transition-all duration-300 px-4 py-1.5 text-sm font-medium rounded-full border-0">
+                Informations Pratiques
               </Badge>
             </motion.div>
 
             <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 via-rose-700 to-rose-600">
-                Infos Pratiques
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-amber-600 to-amber-500">
+                Préparez Votre Visite
               </span>
             </motion.h1>
 
-            <motion.p variants={fadeIn} className="text-lg md:text-xl text-rose-800 mb-8 max-w-2xl mx-auto">
-              Tout ce que vous devez savoir pour profiter pleinement de l'événement
+            <motion.p variants={fadeIn} className="text-lg md:text-xl text-neutral-700 mb-8 max-w-2xl mx-auto">
+              Toutes les informations essentielles pour profiter pleinement de votre expérience Quality Space WI
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Access Section */}
-      <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-gradient-to-bl from-rose-100 to-transparent opacity-70 rounded-bl-full"></div>
-        <div className="absolute bottom-0 left-0 w-1/4 h-1/3 bg-gradient-to-tr from-rose-100 to-transparent opacity-70 rounded-tr-full"></div>
+      {/* Key Info Cards */}
+      <section className="py-16 md:py-24 bg-white relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          >
+            {[
+              {
+                icon: <Calendar className="w-8 h-8 text-amber-700" />,
+                title: "Date",
+                content: "Samedi 8 novembre 2025",
+                color: "from-amber-500 to-amber-600",
+              },
+              {
+                icon: <Clock className="w-8 h-8 text-amber-700" />,
+                title: "Horaires",
+                content: "10h00 - 20h00",
+                color: "from-amber-500 to-amber-600",
+              },
+              {
+                icon: <MapPin className="w-8 h-8 text-amber-700" />,
+                title: "Lieu",
+                content: "Les villas les trésors de Laurëlia",
+                color: "from-amber-500 to-amber-600",
+              },
+            ].map((item, index) => (
+              <motion.div key={index} variants={scaleUp}>
+                <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+                  <CardContent className="p-8 text-center">
+                    <div
+                      className={`w-16 h-16 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center text-white mx-auto mb-4`}
+                    >
+                      {item.icon}
+                    </div>
+                    <h3 className="text-xl font-bold text-neutral-800 mb-2">{item.title}</h3>
+                    <p className="text-neutral-600">{item.content}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Program Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(251,191,36,0.3)_0%,rgba(255,255,255,0)_70%)]"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -113,59 +137,50 @@ export default function InfosPratiquesPage() {
             variants={staggerContainer}
             className="max-w-4xl mx-auto"
           >
-            <motion.div variants={fadeIn} className="text-center mb-16">
-              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">Accès</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
-                  Comment nous rejoindre
+            <motion.div variants={fadeIn} className="text-center mb-12">
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
+                Programme
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
+                  Au Programme
                 </span>
               </h2>
             </motion.div>
 
-            <motion.div variants={scaleUp} className="relative mb-16">
-              <div className="absolute -inset-1 bg-gradient-to-br from-rose-300 to-rose-600 rounded-2xl opacity-70 blur-md"></div>
-              <Card className="relative border-none bg-white/90 backdrop-blur-sm shadow-xl overflow-hidden">
-                <CardContent className="p-8">
-                  <div className="flex flex-col md:flex-row gap-8 items-center">
-                    <div className="w-full md:w-1/2">
-                      <div className="flex items-center mb-4">
-                        <MapPin className="w-6 h-6 text-rose-600 mr-3" />
-                        <h3 className="text-xl font-bold text-rose-800">Adresse</h3>
+            <motion.div variants={fadeIn} className="space-y-6">
+              {[
+                { time: "10h00", activity: "Ouverture des portes" },
+                { time: "11h00 - 12h00", activity: "Défilé de mode" },
+                { time: "12h00 - 14h00", activity: "Découverte des exposants" },
+                { time: "14h00 - 15h00", activity: "Performance des SBK dancers" },
+                { time: "15h00 - 16h00", activity: "Groupe de carnaval" },
+                { time: "16h00 - 17h00", activity: "Défilé de mode" },
+                { time: "17h00 - 20h00", activity: "Ambiance DJ avec DJ Jahny, DJ Mike, DJ Tropic" },
+              ].map((item, index) => (
+                <Card key={index} className="border-l-4 border-amber-500 shadow-md hover:shadow-lg transition-all">
+                  <CardContent className="p-6 flex items-center gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
+                        <Clock className="w-8 h-8 text-white" />
                       </div>
-                      <p className="text-rose-700 mb-6 text-lg">Hôtel Arawak, 41 Pointe de la Verdure, Gosier</p>
-
-                      <div className="flex items-center mb-4">
-                        <Car className="w-6 h-6 text-rose-600 mr-3" />
-                        <h3 className="text-xl font-bold text-rose-800">Parking</h3>
-                      </div>
-                      <p className="text-rose-700 mb-6">Parking disponible sur place</p>
-
-                      <div className="flex items-center mb-4">
-                        <Bus className="w-6 h-6 text-rose-600 mr-3" />
-                        <h3 className="text-xl font-bold text-rose-800">Transport en commun</h3>
-                      </div>
-                      <p className="text-rose-700">Bus à proximité</p>
                     </div>
-                    <div className="w-full md:w-1/2 h-64 md:h-80 relative rounded-xl overflow-hidden">
-                      <Image
-                        src="/images/arawak_hotel.jpg"
-                        alt="Hôtel Arawak"
-                        fill
-                        className="object-cover"
-                      />
+                    <div>
+                      <p className="text-lg font-bold text-amber-700 mb-1">{item.time}</p>
+                      <p className="text-neutral-800 text-lg">{item.activity}</p>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              ))}
             </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* Tickets Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-rose-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-fixed opacity-5"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(254,205,211,0.5)_0%,rgba(255,255,255,0)_70%)]"></div>
+      <section className="py-16 md:py-24 bg-amber-50 relative overflow-hidden">
+        <div className="absolute -top-40 left-0 w-96 h-96 bg-gradient-to-br from-amber-200/30 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 right-0 w-96 h-96 bg-gradient-to-tl from-amber-200/30 to-transparent rounded-full blur-3xl"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -175,247 +190,157 @@ export default function InfosPratiquesPage() {
             variants={staggerContainer}
             className="max-w-4xl mx-auto"
           >
-            <motion.div variants={fadeIn} className="text-center mb-16">
-              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
+            <motion.div variants={fadeIn} className="text-center mb-12">
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
                 Billetterie
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
-                  Réservez vos places
+              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
+                  Tarifs & Réservations
                 </span>
               </h2>
-              <p className="text-lg text-rose-800 mb-8">
-                Assurez votre place pour cette édition spéciale Fête des Mères
-              </p>
             </motion.div>
 
-            <motion.div variants={scaleUp} className="relative mb-8">
-              <div className="absolute -inset-1 bg-gradient-to-r from-rose-400 to-rose-600 rounded-full opacity-70 blur-md"></div>
+            <motion.div variants={staggerContainer} className="grid md:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  title: "Individuel",
+                  price: "5€",
+                  description: "1 personne",
+                  icon: <Users className="w-6 h-6" />,
+                },
+                {
+                  title: "Duo",
+                  price: "7€",
+                  description: "2 personnes",
+                  icon: <Users className="w-6 h-6" />,
+                  featured: true,
+                },
+                {
+                  title: "Famille",
+                  price: "8€",
+                  description: "4 personnes",
+                  icon: <Users className="w-6 h-6" />,
+                },
+              ].map((ticket, index) => (
+                <motion.div key={index} variants={scaleUp}>
+                  <Card
+                    className={`h-full border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
+                      ticket.featured ? "ring-2 ring-amber-500" : ""
+                    }`}
+                  >
+                    <CardContent className="p-8 text-center">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-white mx-auto mb-4">
+                        {ticket.icon}
+                      </div>
+                      <h3 className="text-2xl font-bold text-neutral-800 mb-2">{ticket.title}</h3>
+                      <div className="flex items-center justify-center gap-2 mb-2">
+                        <Euro className="w-6 h-6 text-amber-600" />
+                        <p className="text-4xl font-bold text-amber-600">{ticket.price}</p>
+                      </div>
+                      <p className="text-neutral-600">{ticket.description}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="text-center">
               <Link
                 href="https://my.bizouk.com/quality-space-edition-2"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative inline-flex items-center justify-center w-full h-16 px-10 py-4 bg-gradient-to-r from-rose-500 to-rose-600 text-white text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
+                className="inline-flex items-center justify-center h-14 px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
               >
-                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-rose-600 to-rose-700 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
-                <span className="relative flex items-center">
-                  Accéder à la billetterie
-                  <Ticket className="w-5 h-5 ml-2" />
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-amber-600 to-amber-700 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                <span className="relative flex items-center text-lg">
+                  Réserver mes billets
+                  <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
               </Link>
             </motion.div>
-
-            <motion.div variants={staggerContainer} className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <motion.div variants={scaleUp}>
-                <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden bg-white">
-                  <CardHeader className="bg-gradient-to-r from-rose-500 to-rose-600 text-white">
-                    <CardTitle>Entrées Standard</CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <ul className="space-y-4">
-                      <li className="flex justify-between items-center border-b border-rose-100 pb-2">
-                        <span className="text-rose-800">Entrée adulte</span>
-                        <span className="font-bold text-rose-900">15 €</span>
-                      </li>
-                      <li className="flex justify-between items-center border-b border-rose-100 pb-2">
-                        <span className="text-rose-800">Entrée enfant</span>
-                        <span className="font-bold text-rose-900">5 €</span>
-                      </li>
-                      <li className="flex justify-between items-center border-b border-rose-100 pb-2">
-                        <span className="text-rose-800">Entrée famille (2 adultes + 2 enfants)</span>
-                        <span className="font-bold text-rose-900">35 €</span>
-                      </li>
-                      <li className="flex justify-between items-center">
-                        <span className="text-rose-800">Enfant supplémentaire</span>
-                        <span className="font-bold text-rose-900">5 € par enfant</span>
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </motion.div>
-
-              <motion.div variants={scaleUp}>
-                <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden bg-white">
-                  <CardHeader className="bg-gradient-to-r from-rose-600 to-rose-700 text-white">
-                    <CardTitle>Entrées VIP</CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <ul className="space-y-4">
-                      <li className="flex justify-between items-center border-b border-rose-100 pb-2">
-                        <span className="text-rose-800">Entrée VIP</span>
-                        <span className="font-bold text-rose-900">60 € par personne</span>
-                      </li>
-                      <li className="flex justify-between items-center">
-                        <span className="text-rose-800">Pack VIP pour 2 personnes</span>
-                        <span className="font-bold text-rose-900">120 €</span>
-                      </li>
-                    </ul>
-                    <div className="mt-6 p-4 bg-rose-50 rounded-lg">
-                      <h4 className="font-bold text-rose-800 mb-2">Inclus dans le pack VIP :</h4>
-                      <ul className="space-y-2 text-rose-700">
-                        <li className="flex items-start">
-                          <span className="text-rose-500 mr-2">✓</span>
-                          Accès prioritaire à l'événement
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-rose-500 mr-2">✓</span>
-                          Espace lounge dédié
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-rose-500 mr-2">✓</span>
-                          Boissons et collations offertes
-                        </li>
-                        <li className="flex items-start">
-                          <span className="text-rose-500 mr-2">✓</span>
-                          Goodie bag exclusif
-                        </li>
-                      </ul>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Programme Section */}
-      <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-rose-50 to-transparent"></div>
-        <div className="absolute -top-40 right-0 w-96 h-96 bg-gradient-to-bl from-rose-200/30 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-40 left-0 w-96 h-96 bg-gradient-to-tr from-rose-200/30 to-transparent rounded-full blur-3xl"></div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <motion.div variants={fadeIn}>
-              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
-                24 Mai 2025
-              </Badge>
-            </motion.div>
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">
-                Programme Détaillé
-              </span>
-            </motion.h2>
-            <motion.p variants={fadeIn} className="text-lg text-rose-800">
-              Planifiez votre journée et ne manquez aucun moment fort
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto"
-          >
-            <Card className="border-none shadow-xl">
-              <CardContent className="p-6">
-                <div className="relative pl-8 py-8 pr-4">
-                  <div className="absolute top-0 bottom-0 left-16 w-0.5 bg-gradient-to-b from-rose-300 via-rose-500 to-rose-300"></div>
-
-                  {[
-                    {
-                      time: "09:00",
-                      title: "Ouverture des Portes",
-                      description: "Accueil des visiteurs et présentation de l'événement",
-                      location: "Entrée principale",
-                    },
-                    {
-                      time: "09:00",
-                      title: "Atelier Création de Bijoux",
-                      description: "Apprenez à créer vos propres bijoux avec des matériaux locaux. De 09h00 à 14h00.",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "09:00",
-                      title: "Atelier Création de Bougies parfumées",
-                      description: "Apprenez à créer vos propres bougies parfumées avec des matériaux locaux. De 09h00 à 14h00.",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "09:00",
-                      title: "Ambiance Musical",
-                      description: "DJ TomTom, de 09h00 à 14h00.",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "14:00",
-                      title: "Jessye Belleval",
-                      description: "Show musical",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "14:00",
-                      title: "Ambiance Musical",
-                      description: "DJ Saam, de 14h00 à 19h00.",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "15:00",
-                      title: "Défilé de Mode",
-                      description: "Découvrez les créations des designers locaux",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "16:00",
-                      title: "Showcase Musical",
-                      description: "Show case de Dasha",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "17:00",
-                      title: "Showcase Musical",
-                      description: "Show case de Quan Dan",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "18:00",
-                      title: "Showcase Musical",
-                      description: "Artiste invité",
-                      location: "Salle principale",
-                    },
-                    {
-                      time: "19:00",
-                      title: "Dj Luchshiy",
-                      description: "Show musical et clôture. Jusqu'à 22h.",
-                      location: "Salle principale",
-                    },
-                  ].map((item, index) => (
-                    <motion.div key={index} variants={fadeIn} className="relative mb-12 last:mb-0 flex">
-                      <div className="absolute -left-8 mt-1">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-400 to-rose-600 flex items-center justify-center text-white shadow-lg">
-                          <span className="text-sm font-bold">{item.time}</span>
-                        </div>
-                      </div>
-                      <div className="ml-12 bg-gradient-to-r from-white to-rose-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 w-full">
-                        <h3 className="font-bold text-rose-800 text-xl">{item.title}</h3>
-                        <p className="text-rose-700 mt-2">{item.description}</p>
-                        <div className="flex items-center mt-3 text-rose-600">
-                          <MapPin className="w-4 h-4 mr-1" />
-                          <span className="text-sm">{item.location}</span>
-                        </div>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </motion.div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-rose-50 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
-        <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-bl from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-gradient-to-tr from-rose-300/30 to-transparent rounded-full blur-3xl"></div>
+      <section className="py-16 md:py-24 bg-white relative">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-3xl mx-auto"
+          >
+            <motion.div variants={fadeIn} className="text-center mb-12">
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
+                Questions Fréquentes
+              </Badge>
+              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
+                  Vous Avez Des Questions ?
+                </span>
+              </h2>
+            </motion.div>
+
+            <motion.div variants={fadeIn}>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                <AccordionItem value="item-1" className="border border-amber-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left hover:text-amber-700">
+                    Où se trouve le lieu de l'événement ?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-neutral-600">
+                    L'événement se déroule aux villas les trésors de Laurëlia. L'adresse exacte vous sera communiquée
+                    lors de votre réservation.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="border border-amber-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left hover:text-amber-700">
+                    Y a-t-il un parking disponible ?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-neutral-600">
+                    Oui, un parking gratuit est disponible sur place pour tous les visiteurs.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="border border-amber-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left hover:text-amber-700">
+                    L'événement est-il accessible aux personnes à mobilité réduite ?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-neutral-600">
+                    Oui, le lieu est entièrement accessible aux personnes à mobilité réduite.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border border-amber-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left hover:text-amber-700">
+                    Puis-je venir avec des enfants ?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-neutral-600">
+                    Absolument ! Quality Space WI est un événement familial. Nous proposons un tarif famille à 8€ pour 4
+                    personnes.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="border border-amber-200 rounded-lg px-6">
+                  <AccordionTrigger className="text-left hover:text-amber-700">
+                    Y aura-t-il de la restauration sur place ?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-neutral-600">
+                    Oui, plusieurs stands de restauration et de boissons seront disponibles tout au long de la journée.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(251,191,36,0.3)_0%,rgba(255,255,255,0)_70%)]"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -423,101 +348,64 @@ export default function InfosPratiquesPage() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="max-w-4xl mx-auto text-center"
           >
             <motion.div variants={fadeIn}>
-              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-rose-200 to-rose-100 text-rose-800">
-                Questions fréquentes
+              <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
+                Besoin d'aide ?
               </Badge>
             </motion.div>
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-rose-900 mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-800 to-rose-600">FAQ</span>
+
+            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
+                Contactez-Nous
+              </span>
             </motion.h2>
-            <motion.p variants={fadeIn} className="text-lg text-rose-800">
-              Tout ce que vous devez savoir avant de venir
+
+            <motion.p variants={fadeIn} className="text-lg text-neutral-700 mb-10">
+              Notre équipe est à votre disposition pour répondre à toutes vos questions
             </motion.p>
-          </motion.div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className="max-w-3xl mx-auto"
-          >
-            <Card className="border-none shadow-xl">
-              <CardContent className="p-6">
-                <Accordion type="single" collapsible className="w-full">
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Baby className="w-5 h-5 mr-2 text-rose-600" />
-                        Les enfants sont-ils bienvenus ?
+            <motion.div variants={staggerContainer} className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: <Phone className="w-6 h-6" />,
+                  title: "Téléphone",
+                  content: "+590 690 XX XX XX",
+                  color: "from-amber-500 to-amber-600",
+                },
+                {
+                  icon: <Mail className="w-6 h-6" />,
+                  title: "Email",
+                  content: "contact@qualityspace.gp",
+                  color: "from-amber-500 to-amber-600",
+                },
+                {
+                  icon: <MessageCircle className="w-6 h-6" />,
+                  title: "Réseaux Sociaux",
+                  content: "@qualityspacewi",
+                  color: "from-amber-500 to-amber-600",
+                },
+              ].map((contact, index) => (
+                <motion.div key={index} variants={scaleUp}>
+                  <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white">
+                    <CardContent className="p-6 text-center">
+                      <div
+                        className={`w-12 h-12 rounded-full bg-gradient-to-br ${contact.color} flex items-center justify-center text-white mx-auto mb-3`}
+                      >
+                        {contact.icon}
                       </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Oui, l'événement est ouvert à toute la famille. Des activités spéciales sont prévues pour les
-                      enfants.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-2">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <DogOff className="w-5 h-5 mr-2 text-rose-600" />
-                        Les animaux sont-ils autorisés ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Non, les animaux ne sont pas autorisés dans l'enceinte de l'événement, à l'exception des chiens
-                      guides pour les personnes malvoyantes.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-3">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Coffee className="w-5 h-5 mr-2 text-rose-600" />Y a-t-il de la restauration sur place ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Oui, plusieurs stands de restauration seront présents sur place, proposant une variété de plats
-                      locaux et internationaux.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-4">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Clock className="w-5 h-5 mr-2 text-rose-600" />
-                        Quels sont les horaires de l'événement ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      L'événement se déroule de 09h00 à 22h00. Les portes ouvrent à 08h30.
-                    </AccordionContent>
-                  </AccordionItem>
-
-                  <AccordionItem value="item-5">
-                    <AccordionTrigger className="text-rose-800 hover:text-rose-600">
-                      <div className="flex items-center">
-                        <Ticket className="w-5 h-5 mr-2 text-rose-600" />
-                        Puis-je acheter mon billet sur place ?
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-rose-700">
-                      Oui, des billets seront disponibles à l'entrée, mais nous recommandons l'achat en ligne pour
-                      éviter les files d'attente et bénéficier de tarifs préférentiels.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </CardContent>
-            </Card>
+                      <h3 className="text-lg font-bold text-neutral-800 mb-1">{contact.title}</h3>
+                      <p className="text-neutral-600 text-sm">{contact.content}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* Footer Navigation */}
       <Footer />
     </div>
   )
