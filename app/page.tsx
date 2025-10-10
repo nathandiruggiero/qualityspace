@@ -112,7 +112,7 @@ export default function Home() {
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://my.bizouk.com/quality-space-edition-2"
+                href="https://billeterie.laureliaevents.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center justify-center h-14 px-8 py-3 bg-gradient-to-r from-gold-600 to-gold-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
@@ -214,7 +214,7 @@ export default function Home() {
 
                     <div className="flex items-center mb-6">
                       <Clock className="w-5 h-5 text-gold-700 mr-2" />
-                      <span className="text-gold-900 font-medium">09h00 -22h00</span>
+                      <span className="text-gold-900 font-medium">09h00 - 22h00</span>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -231,7 +231,7 @@ export default function Home() {
                       <Button
                         onClick={() =>
                           window.open(
-                            "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Quality+Space+WI+-+Édition+Spéciale+Anniversaire&dates=20251108T100000Z/20251108T180000Z&details=Une+célébration+de+l%27entrepreneuriat+féminin,+de+la+culture+et+de+l%27innovation+en+Guadeloupe&location=Les+villas+les+trésors+de+Laurëlia,+Grande-Savane+Gourbeyre,+Guadeloupe",
+                            "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Laurëlia+Events+-+Édition+Spéciale+Anniversaire&dates=20251108T100000Z/20251108T180000Z&details=Une+célébration+de+l%27entrepreneuriat+féminin,+de+la+culture+et+de+l%27innovation+en+Guadeloupe&location=Les+villas+les+trésors+de+Laurëlia,+Grande-Savane+Gourbeyre,+Guadeloupe",
                             "_blank",
                           )
                         }
@@ -396,7 +396,7 @@ export default function Home() {
                   description: "Performance d'un groupe de carnaval (nom à confirmer)",
                 },
                 {
-                  time: "09:00 22:00",
+                  time: "09:00 - 22:00",
                   title: "Ambiance DJ",
                   description: "DJ TomTom et autres DJs à confirmer tout au long de l'événement",
                 },

@@ -120,7 +120,7 @@ export default function Header() {
           )}
 
           <Link
-            href="https://my.bizouk.com/quality-space-edition-2"
+            href="https://billeterie.laureliaevents.com"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center justify-center h-10 px-6 bg-gradient-to-r from-gold-600 to-gold-700 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group"

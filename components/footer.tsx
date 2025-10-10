@@ -55,7 +55,9 @@ export default function Footer() {
               asChild
               className="bg-gradient-to-r from-gold-600 to-gold-700 hover:from-gold-700 hover:to-gold-800 text-white"
             >
-              <Link href="https://my.bizouk.com/quality-space-edition-2">Réserver</Link>
+              <Link href="https://billeterie.laureliaevents.com" target="_blank" rel="noopener noreferrer">
+                Réserver
+              </Link>
             </Button>
           </div>
         </div>

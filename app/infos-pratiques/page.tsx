@@ -246,7 +246,7 @@ export default function InfosPratiquesPage() {
 
             <motion.div variants={fadeIn} className="text-center">
               <Link
-                href="https://my.bizouk.com/quality-space-edition-2"
+                href="https://billeterie.laureliaevents.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-14 px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
@@ -318,7 +318,8 @@ export default function InfosPratiquesPage() {
                     Puis-je venir avec des enfants ?
                   </AccordionTrigger>
                   <AccordionContent className="text-neutral-600">
-                    Absolument ! Laurëlia Events est un événement familial. Nous proposons un tarif famille à 8€ pour 4 personnes.
+                    Absolument ! Laurëlia Events est un événement familial. Nous proposons un tarif famille à 8€ pour 4
+                    personnes.
                   </AccordionContent>
                 </AccordionItem>
 
