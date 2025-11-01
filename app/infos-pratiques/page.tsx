@@ -91,7 +91,7 @@ export default function InfosPratiquesPage() {
               {
                 icon: <Calendar className="w-8 h-8 text-amber-700" />,
                 title: "Date",
-                content: "Samedi 8 novembre 2025",
+                content: "Samedi 29 novembre 2025",
                 color: "from-amber-500 to-amber-600",
               },
               {
@@ -154,7 +154,7 @@ export default function InfosPratiquesPage() {
                 { time: "11h00", activity: "Fashion Show - Reines Beauté Noirs" },
                 { time: "13h00", activity: "Fashion Show - LM Hindi" },
                 { time: "15h00", activity: "Performance des SBK dancers" },
-                { time: "17h00", activity: "Groupe de carnaval" },
+                { time: "17h00", activity: "Troupe Brasukera" },
                 { time: "09h00 - 22h00", activity: "Ambiance DJ avec DJ TomTom" },
               ].map((item, index) => (
                 <Card key={index} className="border-l-4 border-amber-500 shadow-md hover:shadow-lg transition-all">

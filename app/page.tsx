@@ -89,7 +89,7 @@ export default function Home() {
           >
             <motion.div variants={fadeIn}>
               <Badge className="mb-4 bg-gradient-to-r from-gold-300 to-gold-200 text-gold-900 hover:from-gold-400 hover:to-gold-300 transition-all duration-300 px-4 py-1.5 text-sm font-medium rounded-full">
-                8 Novembre 2025 • Les villas les trésors de Laurëlia, Grande-Savane Gourbeyre • Guadeloupe
+                29 Novembre 2025 • Les villas les trésors de Laurëlia, Grande-Savane Gourbeyre • Guadeloupe
               </Badge>
             </motion.div>
 
@@ -173,7 +173,7 @@ export default function Home() {
               <Card className="relative border-none overflow-hidden bg-white/90 backdrop-blur-sm shadow-xl">
                 <CardHeader className="bg-gradient-to-r from-gold-600 to-gold-700 text-white">
                   <CardTitle className="text-2xl md:text-3xl">
-                    Édition Spéciale Anniversaire – 8 Novembre 2025
+                    Édition Spéciale Anniversaire – 29 Novembre 2025
                   </CardTitle>
                   <CardDescription className="text-gold-100 text-lg">
                     Une journée inoubliable autour du bien-être, de la beauté et de la créativité
@@ -182,7 +182,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-2">
                   <div className="p-8 md:p-12 flex flex-col justify-center">
                     <p className="text-gold-800 mb-6">
-                      Rejoignez-nous le 8 novembre 2025 aux villas les trésors de Laurëlia, Grande-Savane Gourbeyre pour
+                      Rejoignez-nous le 29 novembre 2025 aux villas les trésors de Laurëlia, Grande-Savane Gourbeyre pour
                       une journée inoubliable autour du bien-être, de la beauté et de la créativité.
                     </p>
 
@@ -196,7 +196,7 @@ export default function Home() {
 
                       <div>
                         <h3 className="font-bold text-gold-900 text-lg mb-2">Animations :</h3>
-                        <p className="text-gold-700">SBK dancers, groupe de carnaval, DJ sets, ambiance festive</p>
+                        <p className="text-gold-700">SBK dancers, Troupe Brasukera, DJ sets, ambiance festive</p>
                       </div>
 
                       <div>
@@ -252,7 +252,7 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-end md:hidden">
                       <div className="p-6">
-                        <Badge className="bg-white/80 text-gold-900 backdrop-blur-sm">8 Novembre 2025</Badge>
+                        <Badge className="bg-white/80 text-gold-900 backdrop-blur-sm">29 Novembre 2025</Badge>
                       </div>
                     </div>
                   </div>
@@ -351,7 +351,7 @@ export default function Home() {
           >
             <motion.div variants={fadeIn}>
               <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-gold-200 to-gold-100 text-gold-900">
-                8 Novembre 2025
+                29 Novembre 2025
               </Badge>
             </motion.div>
             <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-gold-900 mb-4">
@@ -392,8 +392,8 @@ export default function Home() {
                 },
                 {
                   time: "17:00",
-                  title: "Groupe de Carnaval",
-                  description: "Performance d'un groupe de carnaval (nom à confirmer)",
+                  title: "Troupe Brasukera",
+                  description: "Performance d'un groupe de danceuses brésiliennes",
                 },
                 {
                   time: "09:00 - 22:00",
