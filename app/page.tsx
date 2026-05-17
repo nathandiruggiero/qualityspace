@@ -8,12 +8,10 @@ import { ChevronDown, MapPin, Calendar, Clock, ArrowRight, Star, Heart, Gift, Sp
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { useMobile } from "@/hooks/use-mobile"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 export default function Home() {
-  const isMobile = useMobile()
   const [isScrolled, setIsScrolled] = useState(false)
   const heroRef = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -88,9 +86,14 @@ export default function Home() {
             className="max-w-4xl mx-auto text-center"
           >
             <motion.div variants={fadeIn}>
-              <Badge className="mb-4 bg-gradient-to-r from-gold-300 to-gold-200 text-gold-900 hover:from-gold-400 hover:to-gold-300 transition-all duration-300 px-4 py-1.5 text-sm font-medium rounded-full">
-                29 Novembre 2025 • Les villas les trésors de Laurëlia, Grande-Savane Gourbeyre • Guadeloupe
-              </Badge>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-4">
+                <Badge className="bg-gradient-to-r from-gold-300 to-gold-200 text-gold-900 hover:from-gold-400 hover:to-gold-300 transition-all duration-300 px-4 py-1.5 text-sm font-medium rounded-full whitespace-nowrap">
+                  29 Novembre 2025
+                </Badge>
+                <Badge className="bg-gradient-to-r from-gold-200 to-gold-100 text-gold-800 px-4 py-1.5 text-xs font-medium rounded-full text-center">
+                  Les villas les trésors de Laurëlia • Gourbeyre, Guadeloupe
+                </Badge>
+              </div>
             </motion.div>
 
             <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
