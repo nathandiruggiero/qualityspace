@@ -16,14 +16,14 @@ const navLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gold-200">
+    <footer className="bg-cream-dark border-t border-gold-200">
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-10">
 
           {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center gap-3 mb-4">
-              <div className="relative h-11 w-11">
+              <div className="relative h-11 w-11 ring-2 ring-gold-300/50 rounded-full">
                 <Image
                   src="/images/laurelia-logo.jpeg"
                   alt="Laurëlia Events"
@@ -31,20 +31,22 @@ export default function Footer() {
                   className="rounded-full object-cover"
                 />
               </div>
-              <span className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-gold-700 to-gold-600">
+              <span
+                className="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-gold-700 to-gold-500"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
                 Laurëlia Events
               </span>
             </Link>
             <p className="text-gold-700 text-sm leading-relaxed max-w-xs">
               L'événement lifestyle, bien-être et entrepreneuriat local en Guadeloupe.
             </p>
-            {/* Social */}
             <div className="mt-5 flex items-center gap-3">
               <a
                 href="https://www.instagram.com/laureliaevents"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-gold-200 hover:border-gold-500 hover:bg-gold-50 flex items-center justify-center text-gold-600 hover:text-gold-700 transition-all"
+                className="w-9 h-9 rounded-full border border-gold-300 hover:border-gold-500 hover:bg-gold-100 flex items-center justify-center text-gold-600 hover:text-gold-700 transition-all"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -56,7 +58,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="text-gold-900 font-semibold text-sm uppercase tracking-widest mb-5">
+            <h4 className="text-gold-800 font-semibold text-xs uppercase tracking-widest mb-5">
               Navigation
             </h4>
             <nav className="flex flex-col gap-2.5">
@@ -72,20 +74,26 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* CTA */}
+          {/* Event info + CTA */}
           <div>
-            <h4 className="text-gold-900 font-semibold text-sm uppercase tracking-widest mb-5">
+            <h4 className="text-gold-800 font-semibold text-xs uppercase tracking-widest mb-5">
               Prochaine édition
             </h4>
-            <p className="text-gold-700 text-sm mb-2">29 Novembre 2025</p>
-            <p className="text-gold-600 text-sm mb-6 leading-relaxed">
-              Les villas les trésors de Laurëlia<br />Grande-Savane Gourbeyre, Guadeloupe
-            </p>
+            <div className="flex items-start gap-2 mb-2">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-gold-500 mt-1.5 shrink-0" />
+              <p className="text-gold-700 text-sm">29 Novembre 2025</p>
+            </div>
+            <div className="flex items-start gap-2 mb-6">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-forest-400 mt-1.5 shrink-0" />
+              <p className="text-gold-600 text-sm leading-relaxed">
+                Les villas les trésors de Laurëlia<br />Grande-Savane Gourbeyre, Guadeloupe
+              </p>
+            </div>
             <Link
               href="https://billeterie.laureliaevents.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-600 to-gold-700 hover:from-gold-700 hover:to-gold-800 text-white text-sm font-medium px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-forest-500 hover:to-forest-600 text-white text-sm font-medium px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
             >
               Réserver mes billets
               <Sparkles className="w-3.5 h-3.5 animate-pulse" />
@@ -93,10 +101,14 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-gold-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gold-500">
+        <div className="border-t border-gold-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gold-400">
           <span>&copy; {new Date().getFullYear()} Laurëlia Events. Tous droits réservés.</span>
-          <span className="italic text-gold-400">L'excellence caribéenne à l'honneur</span>
+          <span
+            className="italic text-gold-400"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            L'excellence caribéenne à l'honneur
+          </span>
         </div>
       </div>
     </footer>

@@ -64,18 +64,19 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gold-50 to-white overflow-hidden">
+    <div className="min-h-screen bg-cream overflow-hidden">
       <Header />
 
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ opacity: heroOpacity, scale: heroScale }} className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center opacity-30"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-gold-100/70 via-white/50 to-white/90"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(212,172,85,0.3)_0%,rgba(255,255,255,0)_60%)]"></div>
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center opacity-25"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-cream/80 via-cream/50 to-cream/95"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(200,151,58,0.2)_0%,transparent_60%)]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(45,90,61,0.12)_0%,transparent_55%)]"></div>
 
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-gold-300/20 to-gold-500/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gradient-to-tr from-gold-200/20 to-gold-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-gold-300/15 to-gold-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gradient-to-tr from-forest-200/15 to-forest-400/10 rounded-full blur-3xl"></div>
         </motion.div>
 
         <div className="container mx-auto px-4 relative z-10 pt-32 pb-20 md:pt-40 md:pb-32">
@@ -159,9 +160,9 @@ export default function Home() {
       </section>
 
       {/* Next Edition Highlight */}
-      <section className="py-24 bg-gradient-to-b from-white to-gold-50 relative overflow-hidden">
+      <section className="py-24 bg-cream-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-fixed opacity-5"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,172,85,0.3)_0%,rgba(255,255,255,0)_70%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(200,151,58,0.15)_0%,transparent_70%)]"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -267,7 +268,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="a-propos" className="py-24 bg-white relative overflow-hidden">
+      <section id="a-propos" className="py-24 bg-cream relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-gradient-to-bl from-gold-100 to-transparent opacity-70 rounded-bl-full"></div>
         <div className="absolute bottom-0 left-0 w-1/4 h-1/3 bg-gradient-to-tr from-gold-100 to-transparent opacity-70 rounded-tr-full"></div>
 
@@ -339,8 +340,8 @@ export default function Home() {
       </section>
 
       {/* Programme Section */}
-      <section className="py-24 bg-gold-50 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent"></div>
+      <section className="py-24 bg-cream-dark relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-cream to-transparent"></div>
         <div className="absolute -top-12 -right-12 w-64 h-64 bg-gradient-to-bl from-gold-300/30 to-transparent rounded-full blur-3xl"></div>
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-gradient-to-tr from-gold-300/30 to-transparent rounded-full blur-3xl"></div>
 
@@ -406,8 +407,8 @@ export default function Home() {
               ].map((item, index) => (
                 <motion.div key={index} variants={fadeIn} className="relative mb-12 last:mb-0 flex">
                   <div className="absolute -left-8 mt-1">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-white shadow-lg">
-                      <span className="text-sm font-bold">{item.time}</span>
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-white shadow-lg p-1">
+                      <span className="text-[10px] font-bold text-center leading-tight">{item.time}</span>
                     </div>
                   </div>
                   <div className="ml-12 bg-gradient-to-r from-white to-gold-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 w-full">
@@ -422,9 +423,9 @@ export default function Home() {
       </section>
 
       {/* Why Attend Section */}
-      <section className="py-24 bg-gradient-to-b from-white to-gold-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-fixed opacity-5"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,172,85,0.3)_0%,rgba(255,255,255,0)_70%)]"></div>
+      <section className="py-24 bg-cream relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607868894064-2b6e7ed1b324?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-fixed opacity-4"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(45,90,61,0.06)_0%,transparent_70%)]"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
