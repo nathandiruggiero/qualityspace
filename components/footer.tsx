@@ -102,7 +102,19 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gold-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gold-400">
-          <span>&copy; {new Date().getFullYear()} Laurëlia Events. Tous droits réservés.</span>
+          <span>
+            &copy; {new Date().getFullYear()} Laurëlia Events. Tous droits réservés.{" "}
+            Site réalisé par{" "}
+            <a
+              href="https://kloudmos.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold-500 transition-colors underline underline-offset-2"
+            >
+              Kloudmos
+            </a>
+            .
+          </span>
           <span
             className="italic text-gold-400"
             style={{ fontFamily: "var(--font-playfair)" }}

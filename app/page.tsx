@@ -140,23 +140,23 @@ export default function Home() {
               </Link>
             </motion.div>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.5 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
-          >
-            <Link href="#a-propos">
-              <div className="flex flex-col items-center">
-                <p className="text-gold-700 mb-2 text-sm">Découvrir</p>
-                <div className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm shadow-md flex items-center justify-center">
-                  <ChevronDown className="w-6 h-6 text-gold-700 animate-bounce" />
-                </div>
-              </div>
-            </Link>
-          </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.5 }}
+          className="absolute bottom-8 left-0 right-0 flex justify-center z-10 cursor-pointer"
+        >
+          <Link href="#a-propos">
+            <div className="flex flex-col items-center">
+              <p className="text-gold-700 mb-2 text-sm">Découvrir</p>
+              <div className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm shadow-md flex items-center justify-center">
+                <ChevronDown className="w-6 h-6 text-gold-700 animate-bounce" />
+              </div>
+            </div>
+          </Link>
+        </motion.div>
       </section>
 
       {/* Next Edition Highlight */}
