@@ -84,7 +84,7 @@ export default function AboutPage() {
               </Badge>
             </motion.div>
 
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <motion.h1 variants={fadeIn} className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600">
                 À Propos
               </span>
@@ -115,7 +115,7 @@ export default function AboutPage() {
               <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-gold-200 to-gold-100 text-gold-900">
                 Notre Histoire
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-gold-900 mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gold-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 to-gold-600">
                   Origine & Vision
                 </span>
@@ -186,7 +186,7 @@ export default function AboutPage() {
                 Notre Parcours
               </Badge>
             </motion.div>
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-gold-900 mb-4">
+            <motion.h2 variants={fadeIn} className="text-2xl sm:text-4xl md:text-5xl font-bold text-gold-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 to-gold-600">
                 L'Histoire du Projet
               </span>
@@ -274,7 +274,7 @@ export default function AboutPage() {
                 Ce qui nous anime
               </Badge>
             </motion.div>
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-gold-900 mb-4">
+            <motion.h2 variants={fadeIn} className="text-2xl sm:text-4xl md:text-5xl font-bold text-gold-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 to-gold-600">
                 Nos Valeurs
               </span>
@@ -372,7 +372,7 @@ export default function AboutPage() {
               </Badge>
             </motion.div>
 
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-gold-900 mb-6">
+            <motion.h2 variants={fadeIn} className="text-2xl sm:text-4xl md:text-5xl font-bold text-gold-900 mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 to-gold-600">
                 Participez à la Prochaine Édition
               </span>
@@ -427,7 +427,7 @@ export default function AboutPage() {
             className="max-w-4xl mx-auto text-center"
           >
             <div className="text-6xl md:text-8xl text-gold-300 mb-6">"</div>
-            <p className="text-2xl md:text-3xl text-gold-800 mb-8 italic font-light">
+            <p className="text-lg sm:text-2xl md:text-3xl text-gold-800 mb-8 italic font-light">
               Laurëlia Events est plus qu'un événement, c'est un mouvement qui célèbre l'excellence caribéenne et
               inspire la nouvelle génération d'entrepreneurs guadeloupéens à rêver grand et à créer avec passion.
             </p>

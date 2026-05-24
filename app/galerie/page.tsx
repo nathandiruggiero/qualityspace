@@ -178,7 +178,7 @@ export default function GaleriePage() {
               </Badge>
             </motion.div>
 
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <motion.h1 variants={fadeIn} className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600">
                 Notre Galerie
               </span>
@@ -224,7 +224,7 @@ export default function GaleriePage() {
             className="max-w-6xl mx-auto"
           >
             <Tabs defaultValue="all" className="w-full">
-              <TabsList className="grid grid-cols-3 md:grid-cols-5 mb-12 p-1 bg-white/80 backdrop-blur-sm rounded-full shadow-md">
+              <TabsList className="flex flex-wrap justify-center gap-2 mb-12 h-auto p-1.5 bg-white/80 backdrop-blur-sm rounded-2xl shadow-md">
                 {[
                   { value: "all", label: "Tous" },
                   { value: "mode", label: "Mode" },
@@ -235,7 +235,7 @@ export default function GaleriePage() {
                   <TabsTrigger
                     key={tab.value}
                     value={tab.value}
-                    className="rounded-full data-[state=active]:bg-gradient-to-r data-[state=active]:from-gold-600 data-[state=active]:to-gold-700 data-[state=active]:text-white"
+                    className="rounded-full px-4 py-1.5 text-sm data-[state=active]:bg-gradient-to-r data-[state=active]:from-gold-600 data-[state=active]:to-gold-700 data-[state=active]:text-white"
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -332,7 +332,7 @@ export default function GaleriePage() {
               </Badge>
             </motion.div>
 
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-gold-900 mb-6">
+            <motion.h2 variants={fadeIn} className="text-2xl sm:text-4xl md:text-5xl font-bold text-gold-900 mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 to-gold-600">
                 Rejoignez-nous sur Instagram
               </span>

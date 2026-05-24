@@ -87,7 +87,7 @@ export default function EquipePage() {
               </Badge>
             </motion.div>
 
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <motion.h1 variants={fadeIn} className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600">
                 Rencontrez Notre Équipe
               </span>
@@ -164,7 +164,7 @@ export default function EquipePage() {
                 <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-gold-200 to-gold-100 text-gold-900">
                   Contactez-nous
                 </Badge>
-                <h2 className="text-4xl md:text-5xl font-bold text-gold-900 mb-6">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gold-900 mb-6">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-800 to-gold-600">
                     Envoyez-nous un message
                   </span>

@@ -64,7 +64,7 @@ export default function InfosPratiquesPage() {
               </Badge>
             </motion.div>
 
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <motion.h1 variants={fadeIn} className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-amber-600 to-amber-500">
                 Préparez Votre Visite
               </span>
@@ -141,7 +141,7 @@ export default function InfosPratiquesPage() {
               <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
                 Programme
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                   Au Programme
                 </span>
@@ -158,9 +158,9 @@ export default function InfosPratiquesPage() {
                 { time: "09h00 - 22h00", activity: "Ambiance DJ avec DJ TomTom" },
               ].map((item, index) => (
                 <Card key={index} className="border-l-4 border-amber-500 shadow-md hover:shadow-lg transition-all">
-                  <CardContent className="p-6 flex items-center gap-6">
+                  <CardContent className="p-4 sm:p-6 flex items-center gap-4 sm:gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
+                      <div className="w-14 h-14 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center">
                         <Clock className="w-8 h-8 text-white" />
                       </div>
                     </div>
@@ -193,7 +193,7 @@ export default function InfosPratiquesPage() {
               <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
                 Billetterie
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                   Tarifs & Réservations
                 </span>
@@ -276,7 +276,7 @@ export default function InfosPratiquesPage() {
               <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
                 Questions Fréquentes
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                   Vous Avez Des Questions ?
                 </span>
@@ -355,7 +355,7 @@ export default function InfosPratiquesPage() {
               </Badge>
             </motion.div>
 
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            <motion.h2 variants={fadeIn} className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                 Contactez-Nous
               </span>

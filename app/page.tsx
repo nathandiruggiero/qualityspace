@@ -97,7 +97,7 @@ export default function Home() {
               </div>
             </motion.div>
 
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
+            <motion.h1 variants={fadeIn} className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-700 via-gold-600 to-gold-500">
                 Laurëlia Events
               </span>
@@ -105,7 +105,7 @@ export default function Home() {
 
             <motion.p
               variants={fadeIn}
-              className="text-2xl md:text-3xl mt-2 mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gold-700 to-gold-600"
+              className="text-lg sm:text-2xl md:text-3xl mt-2 mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gold-700 to-gold-600"
             >
               L'événement lifestyle, bien-être et entrepreneuriat local en Guadeloupe
             </motion.p>

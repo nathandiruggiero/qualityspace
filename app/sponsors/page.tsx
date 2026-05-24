@@ -97,7 +97,7 @@ export default function SponsorsPage() {
               </Badge>
             </motion.div>
 
-            <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <motion.h1 variants={fadeIn} className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-amber-600 to-amber-500">
                 Ils Nous Soutiennent
               </span>
@@ -124,7 +124,7 @@ export default function SponsorsPage() {
               <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
                 Nos Sponsors
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                   Partenaires 2025
                 </span>
@@ -175,7 +175,7 @@ export default function SponsorsPage() {
               <Badge className="mb-4 px-3 py-1 bg-gradient-to-r from-amber-300 to-amber-200 text-amber-900 border-0">
                 Pourquoi nous soutenir
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                   Les Avantages
                 </span>
@@ -254,7 +254,7 @@ export default function SponsorsPage() {
               </Badge>
             </motion.div>
 
-            <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            <motion.h2 variants={fadeIn} className="text-2xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500">
                 Devenez Partenaire
               </span>
