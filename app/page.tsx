@@ -116,6 +116,19 @@ export default function Home() {
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
+                href="https://candid-concha-c53085.netlify.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleATMIbxwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp5llK2gibZ_Xl43brtNHcGyqoMq3mvnocnDxn_4sUaNpHB1913YQk-EJuXFs_aem_3ThcZOD0RdDdDEhGde_dRg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative inline-flex items-center justify-center h-14 px-8 py-3 bg-gradient-to-r from-gold-600 to-gold-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group"
+              >
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-gold-700 to-gold-800 transition-all duration-300 transform scale-x-0 group-hover:scale-x-100 origin-left"></span>
+                <span className="relative flex items-center text-lg">
+                  Voir le catalogue
+                  <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                </span>
+              </Link>
+
+              <Link
                 href="https://billeterie.laureliaevents.com"
                 target="_blank"
                 rel="noopener noreferrer"

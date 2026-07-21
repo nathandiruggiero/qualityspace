@@ -7,6 +7,7 @@ import { Sparkles, Menu, X } from "lucide-react"
 
 const navItems = [
   { name: "Le concept", path: "/le-concept" },
+  { name: "Catalogue", path: "https://candid-concha-c53085.netlify.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleATMIbxwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp5llK2gibZ_Xl43brtNHcGyqoMq3mvnocnDxn_4sUaNpHB1913YQk-EJuXFs_aem_3ThcZOD0RdDdDEhGde_dRg" },
   { name: "Exposants", path: "/exposants" },
   { name: "Sponsors", path: "/sponsors" },
   { name: "Infos pratiques", path: "/infos-pratiques" },
@@ -72,6 +73,8 @@ export default function Header() {
               <Link
                 key={item.path}
                 href={item.path}
+                target={item.path.startsWith("http") ? "_blank" : undefined}
+                rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="relative text-sm text-gold-800 hover:text-gold-500 transition-colors group whitespace-nowrap"
               >
                 {item.name}
@@ -146,6 +149,8 @@ export default function Header() {
               <Link
                 key={item.path}
                 href={item.path}
+                target={item.path.startsWith("http") ? "_blank" : undefined}
+                rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
                 onClick={() => setIsMenuOpen(false)}
                 className="text-base font-medium text-gold-800 hover:text-gold-500 hover:bg-gold-100/60 px-3 py-3 rounded-xl transition-colors border-b border-gold-100 last:border-0"
               >
