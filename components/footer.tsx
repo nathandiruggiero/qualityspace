@@ -7,7 +7,6 @@ import { Sparkles } from "lucide-react"
 const navLinks = [
   { label: "Accueil", href: "/" },
   { label: "Le Concept", href: "/le-concept" },
-  { label: "Catalogue", href: "https://candid-concha-c53085.netlify.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleATMIbxwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp5llK2gibZ_Xl43brtNHcGyqoMq3mvnocnDxn_4sUaNpHB1913YQk-EJuXFs_aem_3ThcZOD0RdDdDEhGde_dRg" },
   { label: "Exposants", href: "/exposants" },
   { label: "Sponsors", href: "/sponsors" },
   { label: "Infos Pratiques", href: "/infos-pratiques" },
@@ -67,8 +66,6 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  target={link.href.startsWith("http") ? "_blank" : undefined}
-                  rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
                   className="text-sm text-gold-700 hover:text-gold-500 transition-colors w-fit"
                 >
                   {link.label}
